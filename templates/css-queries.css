@@ -254,7 +254,7 @@ body{
 .nbs_2 span {font-size: 10px; color: #999; display: block;}
 
 .search_bs {padding: 0 10px;}
-.search_bs ul li {padding-top: 10px; height: 30px; overflow: hidden; position: relative;}
+.search_bs ul li {padding: 8px 0px;height: 30px;overflow: hidden;position: relative;}
 .search_bs ul li .styled option {padding: 0 5px;}
 .check_ttp {font-size: 14px; padding-top: 0 !important; text-transform: capitalize; line-height: 30px;}
 .check_ttp span {padding: 0 1px 0 4px; line-height: 10px;}

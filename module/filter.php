@@ -73,13 +73,6 @@
     
                             </select>
                         </li>
-                          <li> 
-                            <select name="duong" id="duong"  class="styled"  > 
-                            
-                                <option value=""> Chọn đường</option> 
-    
-                            </select>
-                        </li>
                         <li>
                              <select name="loai" id="loai" class="styled"  >
                              

@@ -3,8 +3,6 @@
 	require("config.php");
 	require("common_start.php");
 	include("lib/func.lib.php");
- 
-	if($_SERVER['REQUEST_URI']!="/") $_SESSION['back_bds']="http://giathinhcantho.com".$_SERVER['REQUEST_URI'];else $_SESSION['back_bds']="http://giathinhcantho.com";
  	 
 	if($_SESSION['idtinh']!="") {
 			$idtinh=$_SESSION['idtinh'];
@@ -53,7 +51,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="audience" content="general" /><meta name="resource-type" content="document" /><meta name="abstract" content="Thông tin Bất Động Sản TP HCM" /><meta name="classification" content="Bất động sản TP HCM" /><meta name="area" content="Bất Động Sản" /><meta name="placename" content="Việt Nam" /><meta name="author" content="bdstphcm.com" /><meta name="owner" content="bdstphcm.com" /><meta name="distribution" content="Global" /><meta name="revisit-after" content="1 days" /><meta name="robots" content="follow" />
 <meta name="google-site-verification" content="BI1ntifjOKhc5Jn_Ln9Cmfvvn1Ms6c7k7rOTyRxrVjE" />
-<base href="<?php echo $linkrootbds; ?>" />
+<base href="<?=$linkrootbds?>"  />
 <?php include("module/title.php") ;?>
 <link rel="stylesheet" type="text/css" href="<?php echo $linkrootbds?>templates/css-queries.css">
 <!--<script type="text/javascript" src="<?php echo $linkrootbds?>scripts/jquery-1.10.0.min.js"></script>-->
