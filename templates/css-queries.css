@@ -98,7 +98,7 @@ body{
 	line-height: 40px;
 	font-size: 14px;
 }
-.ul_menu > li > a .line_menu_2 {padding: 0 20px;}
+.ul_menu > li > a .line_menu_2 {padding: 0 15px;}
 .ul_menu > li:first-child > a .line_menu_2 {padding: 0 10px;}
 .ul_menu > li:first-child > a .line_menu_2 img {vertical-align: top;}
 .ul_menu > li.active > a, .ul_menu > li:hover > a {background-color: #3d9b20;}
@@ -254,7 +254,7 @@ body{
 .nbs_2 span {font-size: 10px; color: #999; display: block;}
 
 .search_bs {padding: 0 10px;}
-.search_bs ul li {padding: 8px 0px;height: 30px;overflow: hidden;position: relative;}
+.search_bs ul li {margin: 10px 0px;height: 30px;overflow: hidden;position: relative;}
 .search_bs ul li .styled option {padding: 0 5px;}
 .check_ttp {font-size: 14px; padding-top: 0 !important; text-transform: capitalize; line-height: 30px;}
 .check_ttp span {padding: 0 1px 0 4px; line-height: 10px;}
@@ -310,7 +310,7 @@ span.customSelect span.customSelectInner {
 	-webkit-box-sizing: border-box;
 }
 span.customSelect.customSelectFocus {border: 1px solid #40B01A; color: #40B01A;}
-.check_3_search .c1_s {float: left; width: 80px; margin-right: 10px;}
+.check_3_search .c1_s {float: left;width: 80px;margin-right: 25px;}
 .check_3_search .c1_s:last-child {margin-right: 0;}
 .btn_Search {
 	cursor: pointer;
@@ -1340,4 +1340,15 @@ input[type='submit']
 	.bs_3 { display:none;}
 	#quangcao_t { display:none;}
 	#street_t { display:none;}
+}
+
+#search-any{
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	cursor: pointer;
+}
+
+#quick-search{
+
 }

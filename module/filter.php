@@ -108,7 +108,7 @@
                             </div>
                             
                             <div class="c1_s">
-                               <select name="dientich" id="dientich" class="styled" style="width:169px;"  > 
+                               <select name="dientich" id="dientich" class="styled" style="width:154px;"  >
                                 <option value=""> Chọn diện tích </option> 
                                 <option value="nho-hon-30-m2"> < 30 m2 </option>
                                 <option value="30-50-m2"> 30 - 50 m2 </option>

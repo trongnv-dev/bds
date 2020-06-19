@@ -279,4 +279,12 @@ function userPermissEdit($listEdit,$cate,$type) {
 	}
 	return false;
 }
+function truncateString($str, $maxChars = 40, $holder = "...")
+{
+    if (strlen($str) > $maxChars) {
+        return trim(substr($str, 0, $maxChars)) . $holder;
+    } else {
+        return $str;
+    }
+}
 ?>

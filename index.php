@@ -24,14 +24,13 @@ date_default_timezone_set('Asia/Ho_Chi_Minh');
 <link rel="shortcut icon" href="http://bdstphcm.com/imgs/favicon.ico" />
 <!--<script type="text/javascript" src="<?php echo $linkrootbds?>scripts/jquery-1.10.0.min.js"></script>-->
 <script src='http://maps.googleapis.com/maps/api/js?v=3&sensor=false&amp;libraries=places&key=AIzaSyBe9CAbTzqesOjcL3bik6FqoMzm3cPftQY'></script>
-<!--<script type="text/javascript" src="--><?php //echo $linkrootbds?><!--scripts/map/js/jquery-1.7.1/jquery.min.js"></script>-->
-<script src="<?php echo $linkrootbds?>templates/assets/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="<?php echo $linkrootbds?>scripts/map/js/jquery-1.7.1/jquery.min.js"></script>
+<!--<script src="--><?php //echo $linkrootbds?><!--templates/assets/js/jquery-1.10.2.min.js"></script>-->
 
 <!--<script type="text/javascript" src="<?php echo $linkrootbds?>scripts/jquery.min.js"></script>-->
 <!--<script type="text/javascript" src="<?php echo $linkrootbds?>scripts/jquery-ui.js"></script>-->
 <link href="<?php echo $linkrootbds?>lib/select2/select2.css" rel="stylesheet"/>
 <script src="<?php echo $linkrootbds?>lib/select2/select2.js"></script>
-<script type="text/javascript" src="<?php echo $linkrootbds?>scripts/scrolltopcontrol.js"></script>
 
  <script type="text/javascript" src="<?php echo $linkrootbds?>lib/jquery-ui.min.js"></script> 
 
@@ -53,20 +52,19 @@ date_default_timezone_set('Asia/Ho_Chi_Minh');
     <link href="<?php echo $linkrootbds?>templates/assets/fonts/icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
     <link href="<?php echo $linkrootbds?>templates/assets/fonts/icon-7-stroke/css/helper.css" rel="stylesheet">
     <link href="<?php echo $linkrootbds?>templates/assets/css/animate.css" rel="stylesheet" media="screen">
-    <link rel="stylesheet" href="<?php echo $linkrootbds?>templates/assets/css/bootstrap-select.min.css">
+<!--    <link rel="stylesheet" href="--><?php //echo $linkrootbds?><!--templates/assets/css/bootstrap-select.min.css">-->
     <link rel="stylesheet" href="<?php echo $linkrootbds?>templates/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo $linkrootbds?>templates/assets/css/icheck.min_all.css">
-    <link rel="stylesheet" href="<?php echo $linkrootbds?>templates/assets/css/price-range.css">
-    <link rel="stylesheet" href="<?php echo $linkrootbds?>templates/assets/css/owl.carousel.css">
-    <link rel="stylesheet" href="<?php echo $linkrootbds?>templates/assets/css/owl.theme.css">
-    <link rel="stylesheet" href="<?php echo $linkrootbds?>templates/assets/css/owl.transitions.css">
+<!--    <link rel="stylesheet" href="--><?php //echo $linkrootbds?><!--templates/assets/css/icheck.min_all.css">-->
+<!--    <link rel="stylesheet" href="--><?php //echo $linkrootbds?><!--templates/assets/css/price-range.css">-->
+<!--    <link rel="stylesheet" href="--><?php //echo $linkrootbds?><!--templates/assets/css/owl.carousel.css">-->
+<!--    <link rel="stylesheet" href="--><?php //echo $linkrootbds?><!--templates/assets/css/owl.theme.css">-->
+<!--    <link rel="stylesheet" href="--><?php //echo $linkrootbds?><!--templates/assets/css/owl.transitions.css">-->
     <link rel="stylesheet" href="<?php echo $linkrootbds?>templates/assets/css/style.css">
     <link rel="stylesheet" href="<?php echo $linkrootbds?>templates/assets/css/responsive.css">
 </head>
 <body itemscope="itemscope" itemtype="http://schema.org/WebPage">
 
 	<div id="wrapper">
-        
         <header id="header">
             <?php include("module/banner.php") ;?>
             
@@ -99,7 +97,10 @@ date_default_timezone_set('Asia/Ho_Chi_Minh');
             
             </div><!-- End .min_wrap -->
         </footer><!-- End #footer -->
-        
+        <div id="search-any">
+<!--            --><?php //include("module/box_filter_left.php") ;?>
+            <img src="/templates/images/System_search_icon.png" alt="tìm kiếm nhanh" style="width: 70px;height: 70px;" title="tìm kiếm nhanh">
+        </div>
     </div><!-- End #wrapper -->
     
     <?php include("module/menu_mobile.php") ;?> 
@@ -114,16 +115,6 @@ date_default_timezone_set('Asia/Ho_Chi_Minh');
     <script type="text/javascript" src="<?php echo $linkrootbds?>scripts/custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
     <script type="text/javascript" src="<?php echo $linkrootbds?>scripts/frame_script.js"></script>
 
-    <script src="<?php echo $linkrootbds?>templates/assets/js/modernizr-2.6.2.min.js"></script>
     <script src="<?php echo $linkrootbds?>templates/bootstrap/js/bootstrap.min.js"></script>
-    <script src="<?php echo $linkrootbds?>templates/assets/js/bootstrap-select.min.js"></script>
-    <script src="<?php echo $linkrootbds?>templates/assets/js/bootstrap-hover-dropdown.js"></script>
-    <script src="<?php echo $linkrootbds?>templates/assets/js/easypiechart.min.js"></script>
-    <script src="<?php echo $linkrootbds?>templates/assets/js/jquery.easypiechart.min.js"></script>
-    <script src="<?php echo $linkrootbds?>templates/assets/js/owl.carousel.min.js"></script>
-    <script src="<?php echo $linkrootbds?>templates/assets/js/wow.js"></script>
-    <script src="<?php echo $linkrootbds?>templates/assets/js/icheck.min.js"></script>
-    <script src="<?php echo $linkrootbds?>templates/assets/js/price-range.js"></script>
-    <script src="<?php echo $linkrootbds?>templates/assets/js/main.js"></script>
 </body>
 </html>

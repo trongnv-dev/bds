@@ -1,4 +1,4 @@
-<div class="block_sb">
+<div id="quick-search" class="block_sb">
     <h4 class="t_sb">
         <span>
            Tìm kiếm nhanh

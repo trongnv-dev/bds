@@ -59,5 +59,13 @@ function delete_image($table,$id,$dxoa){
 		$kq1 =mysql_query($sql) or die(mysql_error());
 	}
 	
-} 
+}
+function truncateString($str, $maxChars = 40, $holder = "...")
+{
+    if (strlen($str) > $maxChars) {
+        return trim(substr($str, 0, $maxChars)) . $holder;
+    } else {
+        return $str;
+    }
+}
 ?>
