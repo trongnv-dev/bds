@@ -48,7 +48,7 @@
 			 unset($_SESSION['kh_login_username']);
 			unset($_SESSION['kh_login_id']);
 			
-			location("http://www.bdstphcm.org/dang-nhap.html");
+			location("/dang-nhap.html");
 		}
 	}
 	if (isset($_POST['quayra'])==true) {

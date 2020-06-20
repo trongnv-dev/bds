@@ -39,7 +39,7 @@
 <style>
 	.show_map{width:100%; height:250px;}
 </style>
- <script type="text/javascript" src="http://www.bdstphcm.org/scripts/jquery.geocomplete.js"></script> 
+ <script type="text/javascript" src="/scripts/jquery.geocomplete.js"></script>
 <script>
 	$(document).ready(function() {
 		$("#geocomplete").geocomplete({

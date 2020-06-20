@@ -16,7 +16,7 @@
 					
 					echo "<h3>Mật khẩu mới của quý khách là: <b>$matkhaumoi</b></h3>";
 					echo "<h3>Vui lòng thay đổi mật khẩu cho lần đăng nhập đầu tiên</h3><br/>";
-					echo "<h3><a href='http://www.bdstphcm.org/dang-nhap.html'>Đăng Nhập</a></h3>";
+					echo "<h3><a href='/dang-nhap.html'>Đăng Nhập</a></h3>";
 				}else{
 					header("location: /");
 				} 

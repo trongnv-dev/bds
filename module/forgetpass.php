@@ -103,13 +103,13 @@
 	});				
 </script>          
 
-    <article class="content">
+    <article class="content" style="width: 709px;float: left;">
         
         
         <div class="f_khung_dn2">
         
             <div class="t_khung_dn2">
-                Chào mừng bạn đến với <span style="color: #40B01A;">BẤT ĐỘNG SẢN TP.HCM</span>
+                <span style="color: #40B01A;">Vui lòng nhập thông tin để lấy lại mật khẩu</span>
             </div><!-- End .t_khung_dn2 -->
             <div class="m_khung_dn2">
             	<form id="form1" name="form1" method="post" action="<?=$linkrootbds;?>quen-mat-khau.html">
@@ -136,7 +136,7 @@
                                     &nbsp;
                                 </span><!-- End .l_k_dn2 -->
                                 <span class="r_k_dn2">
-                                    <input name="btn_doipass" class="btn_dn2" type="submit" value="Gửi thông tin">
+                                    <input name="btn_doipass" class="btn btn-default" type="submit" value="Gửi thông tin">
                                 </span><!-- End .r_k_dn2 -->
                             </li>
                         </ul>

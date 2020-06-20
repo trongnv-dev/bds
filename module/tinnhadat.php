@@ -1,5 +1,5 @@
 <div class="breacrum">
-     <div id="breacrum" xmlns:v="http://rdf.data-vocabulary.org/#" >
+     <div id="breacrum" >
          <span typeof="v:Breadcrumb">
             <a  href="<?php echo $linkrootbds?>" rel="v:url" property="v:title"  title="Trang chủ"> Trang chủ </a>
         </span>

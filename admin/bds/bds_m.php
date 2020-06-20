@@ -546,7 +546,7 @@ $(document).ready(function() {
         <div class="clear"></div>
 		
 		<!-- <script src='http://maps.googleapis.com/maps/api/js?v=3&sensor=false&amp;libraries=places&key=AIzaSyBe9CAbTzqesOjcL3bik6FqoMzm3cPftQY'></script>
-        <script type="text/javascript" src="http://www.bdstphcm.org/scripts/jquery.geocomplete.js"></script> 
+        <script type="text/javascript" src="/scripts/jquery.geocomplete.js"></script>
         <div class="bando" style="width:100%; overflow:hidden;"> -->
         
         <!-- </div> -->

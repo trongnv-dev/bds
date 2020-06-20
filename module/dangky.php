@@ -194,7 +194,7 @@ $(document).ready(function() {
 
 </script>        
 
-    <article class="content">
+    <article class="content" style="width: 709px;float: left;">
         <?php if($ghinho_dangky==1){?>
         <div class="f_khung_dn2">
         	<link rel="stylesheet" type="text/css" href="<?php echo $linkrootbds?>templates/jquery-ui.css">
@@ -224,7 +224,7 @@ $(document).ready(function() {
         <div class="f_khung_dn2">
         
             <div class="t_khung_dn2">
-                Chào mừng bạn đến với trang đăng ký tài khoản <span style="color: #40B01A;">BDSTPHCM</span>
+                Chào mừng bạn đến với trang đăng ký tài khoản
             </div><!-- End .t_khung_dn2 -->
             <div class="m_khung_dn2">
              <form id="form1" name="form1" method="post" action="<?php echo $linkrootbds;?>dang-ky.html">
@@ -322,7 +322,7 @@ $(document).ready(function() {
                             &nbsp;
                         </span><!-- End .l_k_dn2 -->
                         <span class="r_k_dn2">
-                            <input name="btn_dangky" class="btn_dn2" type="submit" value="Đăng ký">
+                            <input name="btn_dangky" class="btn btn-default" type="submit" value="Đăng ký">
                         </span><!-- End .r_k_dn2 -->
                     </li>
                 </ul>

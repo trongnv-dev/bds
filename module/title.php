@@ -944,42 +944,42 @@ if($pageNum>1){
 	} 
 	elseif($_GET['act']=='addbds'){
 		$title_t      =" Đăng tin bất động sản";
-	    $description_t="Chào mừng bạn đến với trang đăng tin bất động sản trên website www.bdstphcm.com bạn muốn bán nhà, cho thuê, sang nhượng cửa hàng, bạn hãy điền vào fom đăng tin dưới để thông tin của bạn được hiển thị trên website";
+	    $description_t="Chào mừng bạn đến với trang đăng tin bất động sản  bạn muốn bán nhà, cho thuê, sang nhượng cửa hàng, bạn hãy điền vào fom đăng tin dưới để thông tin của bạn được hiển thị trên website";
 		$keywords_t   =$row_title_lap['keywords']; 
 	} 
 	elseif($_GET['act']=='editbds'){
 		$title_t      ="Sửa tin đăng bất động sản";
-	    $description_t="Chào mừng bạn đến với trang sửa tin đăng bất động sản trên website www.bdstphcm.com bạn những thông tin còn thiếu hay chưa đúng bạn hãy sửa trực tiếp trên fom và nhấn chấp nhận";
+	    $description_t="Chào mừng bạn đến với trang sửa tin đăng bất động sản  bạn những thông tin còn thiếu hay chưa đúng bạn hãy sửa trực tiếp trên fom và nhấn chấp nhận";
 		$keywords_t   =$row_title_lap['keywords']; 
 	} 
 	elseif($_GET['act']=='addda'){
 		$title_t      =" Đăng dự án  bất động sản";
-	    $description_t="Chào mừng bạn đến với trang đăng tin bất động sản trên website www.bdstphcm.com bạn muốn bán nhà, cho thuê, sang nhượng cửa hàng, bạn hãy điền vào fom đăng tin dưới để thông tin của bạn được hiển thị trên website";
+	    $description_t="Chào mừng bạn đến với trang đăng tin bất động sản  bạn muốn bán nhà, cho thuê, sang nhượng cửa hàng, bạn hãy điền vào fom đăng tin dưới để thông tin của bạn được hiển thị trên website";
 		$keywords_t   =$row_title_lap['keywords']; 
 	} 
 	elseif($_GET['act']=='editda'){
 		$title_t      ="Sửa thông tin dự án bất động sản";
-	    $description_t="Chào mừng bạn đến với trang sửa tin đăng bất động sản trên website www.bdstphcm.com bạn những thông tin còn thiếu hay chưa đúng bạn hãy sửa trực tiếp trên fom và nhấn chấp nhận";
+	    $description_t="Chào mừng bạn đến với trang sửa tin đăng bất động sản  bạn những thông tin còn thiếu hay chưa đúng bạn hãy sửa trực tiếp trên fom và nhấn chấp nhận";
 		$keywords_t   =$row_title_lap['keywords']; 
 	}
 	elseif($_GET['act']=='adddn'){
 		$title_t      =" Đăng thông tin doanh nghiệp";
-	    $description_t="Chào mừng bạn đến với trang đăng tin bất động sản trên website www.bdstphcm.com bạn muốn bán nhà, cho thuê, sang nhượng cửa hàng, bạn hãy điền vào fom đăng tin dưới để thông tin của bạn được hiển thị trên website";
+	    $description_t="Chào mừng bạn đến với trang đăng tin bất động sản  bạn muốn bán nhà, cho thuê, sang nhượng cửa hàng, bạn hãy điền vào fom đăng tin dưới để thông tin của bạn được hiển thị trên website";
 		$keywords_t   =$row_title_lap['keywords']; 
 	} 
 	elseif($_GET['act']=='editdn'){
 		$title_t      ="Sửa thông tin doanh nghiệp";
-	    $description_t="Chào mừng bạn đến với trang sửa tin đăng bất động sản trên website www.bdstphcm.com bạn những thông tin còn thiếu hay chưa đúng bạn hãy sửa trực tiếp trên fom và nhấn chấp nhận";
+	    $description_t="Chào mừng bạn đến với trang sửa tin đăng bất động sản  bạn những thông tin còn thiếu hay chưa đúng bạn hãy sửa trực tiếp trên fom và nhấn chấp nhận";
 		$keywords_t   =$row_title_lap['keywords']; 
 	}
 	elseif($_GET['act']=='manage'){
 		$title_t      ="Quản lý tin đăng";
-	    $description_t="Chào mừng bạn đến với trang sửa tin đăng bất động sản trên website www.bdstphcm.com bạn những thông tin còn thiếu hay chưa đúng bạn hãy sửa trực tiếp trên fom và nhấn chấp nhận";
+	    $description_t="Chào mừng bạn đến với trang sửa tin đăng bất động sản  bạn những thông tin còn thiếu hay chưa đúng bạn hãy sửa trực tiếp trên fom và nhấn chấp nhận";
 		$keywords_t   =$row_title_lap['keywords']; 
 	}
 	elseif($_GET['act']=='forgetpass'){
 		$title_t      ="Tìm lại mật khẩu";
-	    $description_t="Chào mừng bạn đến với trang sửa tin đăng bất động sản trên website www.bdstphcm.com bạn những thông tin còn thiếu hay chưa đúng bạn hãy sửa trực tiếp trên fom và nhấn chấp nhận";
+	    $description_t="Chào mừng bạn đến với trang sửa tin đăng bất động sản  bạn những thông tin còn thiếu hay chưa đúng bạn hãy sửa trực tiếp trên fom và nhấn chấp nhận";
 		$keywords_t   =$row_title_lap['keywords']; 
 	}
 	elseif($_GET['act']=='video_detail'){
@@ -1019,13 +1019,13 @@ if($pageNum>1){
 		$keywords_t =$row_title_lap['keywords'];	
 	}
 	elseif($_GET['act']=='dangky'){
-		$title_t    ="Đăng ký tài khoản trên website www.bdstphcm.com";
-	    $description_t="Chào mừng bạn đến với trang đăng ký tài khoản trên website www.bdstphcm.com để được là thành viên chính thức của chúng tôi bạn hãy nhập thông tin đăng ký để là thành viên chính thức";
+		$title_t    ="Đăng ký tài khoản ";
+	    $description_t="Chào mừng bạn đến với trang đăng ký tài khoản  để được là thành viên chính thức của chúng tôi bạn hãy nhập thông tin đăng ký để là thành viên chính thức";
 		$keywords_t =$row_title_lap['keywords'];	
 	}
 	elseif($_GET['act']=='dangnhap'){
-		$title_t    ="Đăng nhập tài khoản trên website www.bdstphcm.com";
-	    $description_t="Chào mừng bạn đến với trang đăng nhập tài khoản trên website www.bdstphcm.com bạn vui lòng điền thông tin đăng nhập để sử dụng chức năng quảng cáo đăng tin bất động sản trên website ";
+		$title_t    ="Đăng nhập tài khoản ";
+	    $description_t="Chào mừng bạn đến với trang đăng nhập tài khoản  bạn vui lòng điền thông tin đăng nhập để sử dụng chức năng quảng cáo đăng tin bất động sản trên website ";
 		$keywords_t =$row_title_lap['keywords'];	
 	}
 	elseif($_GET['act']=='page404'){

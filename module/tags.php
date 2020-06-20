@@ -21,7 +21,7 @@ if($aaaa==1){
 
 ?>
 <div class="breacrum">
-     <div id="breacrum" xmlns:v="http://rdf.data-vocabulary.org/#" >
+     <div id="breacrum" >
          <span typeof="v:Breadcrumb">
             <a  rel="v:url" property="v:title"  title="Trang chủ" href="<?php echo $linkrootbds?>"> Trang chủ </a>
         </span>

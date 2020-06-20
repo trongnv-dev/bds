@@ -103,13 +103,13 @@ if (isset($_POST['btn_dangnhap_in'])==true){
 	});				
 </script>          
 
-    <article class="content">
-        
+    <article class="content" style="width: 709px;float: left;">
+
         
         <div class="f_khung_dn2">
         
             <div class="t_khung_dn2">
-                Chào mừng bạn đến với <span style="color: #40B01A;">BDSTPHCM</span>
+                Chào mừng bạn
             </div><!-- End .t_khung_dn2 -->
             <div class="m_khung_dn2">
             	<form id="form1" name="form1" method="post" action="<?=$linkrootbds;?>dang-nhap.html">
@@ -163,9 +163,9 @@ if (isset($_POST['btn_dangnhap_in'])==true){
                         <span class="l_k_dn2">
                             &nbsp;
                         </span><!-- End .l_k_dn2 -->
-                        <span class="r_k_dn2">
-                            <input name="btn_dangnhap_in" class="btn_dn2" type="submit" value="Đăng nhập">
-                        </span><!-- End .r_k_dn2 -->
+                        <p class="r_k_dn2">
+                            <input name="btn_dangnhap_in" class="btn btn-default" type="submit" value="Đăng nhập" style="width: 250px">
+                        </p><!-- End .r_k_dn2 -->
                     </li>
                 </ul>
                 <!--<span class="erros_fu_dndk" <?php if($coloi==false){?> style="display: none;" <?php }?> > <?php echo $error_login;?> <?php echo $error_username_in;?> <?php echo $error_password_in;?><?=$error_cap?></span>-->

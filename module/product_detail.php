@@ -85,7 +85,7 @@ $catebds1=get_field('tbl_rv_category','id',get_field('tbl_rv_category','id',$row
 ?>
  
 <div class="breacrum">
-    <div id="breacrum" xmlns:v="http://rdf.data-vocabulary.org/#" >
+    <div id="breacrum" >
         <span typeof="v:Breadcrumb">
             <a rel="v:url" property="v:title"  href="<?php echo $linkrootbds?>" title="Trang chủ"> Trang chủ </a>
         </span>

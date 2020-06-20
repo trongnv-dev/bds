@@ -98,8 +98,8 @@ date_default_timezone_set('Asia/Ho_Chi_Minh');
             </div><!-- End .min_wrap -->
         </footer><!-- End #footer -->
         <div id="search-any">
-<!--            --><?php //include("module/box_filter_left.php") ;?>
-            <img src="/templates/images/System_search_icon.png" alt="tìm kiếm nhanh" style="width: 70px;height: 70px;" title="tìm kiếm nhanh">
+            <?php include("module/filter_anywhere.php") ;?>
+            <img id="show-quick-search" src="/templates/images/System_search_icon.png" alt="tìm kiếm nhanh" style="width: 70px;height: 70px;cursor: pointer" title="tìm kiếm nhanh">
         </div>
     </div><!-- End #wrapper -->
     
@@ -116,5 +116,10 @@ date_default_timezone_set('Asia/Ho_Chi_Minh');
     <script type="text/javascript" src="<?php echo $linkrootbds?>scripts/frame_script.js"></script>
 
     <script src="<?php echo $linkrootbds?>templates/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        $('#show-quick-search').click(function () {
+            $('#quick-search').toggle();
+        });
+    </script>
 </body>
 </html>

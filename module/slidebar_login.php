@@ -17,9 +17,9 @@
                         <li  <?php if($frame=="dangky") echo 'class="active"';?>>
                             <a href="<?php echo $linkrootbds?>dang-ky.html">Đăng ký</a>
                         </li>
-                        <li <?php if($frame=="forgetpass") echo 'class="active"';?>>
-                            <a href="<?php echo $linkrootbds?>quen-mat-khau.html">Quên mật khẩu</a>
-                        </li>
+                        <!--                        <li <?php //if($frame=="forgetpass") echo 'class="active"';?>>
+                            <a href="<?php //echo $linkrootbds?>quen-mat-khau.html">Quên mật khẩu</a>
+                        </li>-->
                     </ul>
                     
                 </div><!-- End .m_dmql -->

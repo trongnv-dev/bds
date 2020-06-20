@@ -1107,7 +1107,8 @@ page-header
     letter-spacing: 2px;
 }
 .content-area{
-    background-color: #FCFCFC; padding-bottom: 55px;
+    background-color: #FCFCFC;
+    /* padding-bottom: 55px; */
 }
 .layout-switcher a{
     font-size: 25px;
@@ -1546,7 +1547,7 @@ Asside widgets CSS
 /*Tools CSS*/
 .p0{
     padding: 0px;
-    min-height: 500px;
+    min-height: 560px;
 }
 .overflow{
     overflow: hidden;
@@ -2698,7 +2699,7 @@ blog
     float: left;
     width: 24px;
     height: 24px;
-    content: "Ã¯ÂÂ§";
+    content: "ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â§";
     color: #FDC600;
     font-size: 16px;
     line-height: 24px;
