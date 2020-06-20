@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37bb6dba-a860-47d4-8b82-13f79459e813" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/2012_func.lib.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/2012_func.lib.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/func.lib.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/func.lib.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/bds_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/bds_home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/box_filter_left.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/box_filter_left.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/filter.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/filter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/scrolltopcontrol.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/scrolltopcontrol.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/css-queries.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/css-queries.css" afterDir="false" />
-    </list>
+    <list default="true" id="37bb6dba-a860-47d4-8b82-13f79459e813" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1592504760352</updated>
-      <workItem from="1592504761907" duration="9080000" />
+      <workItem from="1592504761907" duration="9811000" />
     </task>
     <servers />
   </component>
