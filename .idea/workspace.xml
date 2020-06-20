@@ -4,44 +4,10 @@
     <list default="true" id="37bb6dba-a860-47d4-8b82-13f79459e813" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/bds/bds_m.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/bds/bds_m.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/getMap.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/getMap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/bds.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/bds.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/bds_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/bds_home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/bds_of_city.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/bds_of_city.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/bds_of_street.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/bds_of_street.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/box_filter_left.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/box_filter_left.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/changepass.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/changepass.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/dangky.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/dangky.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/dangnhap.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/dangnhap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/detail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/duan.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/duan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/filter.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/filter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/forgetpass.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/forgetpass.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/getpass.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/getpass.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/huyen.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/huyen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/linhtinh.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/linhtinh.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/nhadatchuaxacthuc.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/nhadatchuaxacthuc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/nhucau.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/nhucau.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/phuong.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/phuong.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/place_bds.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/place_bds.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/product_detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/product_detail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/sieuthidiaoc.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/sieuthidiaoc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/tag_bds.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/tag_bds.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/tags.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/tags.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/tinnhadat.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/tinnhadat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/title.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/title.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/title1.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/title1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/title_17.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/title_17.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/title_6_10.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/title_6_10.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/title_old.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/title_old.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/video.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/video.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/video_detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/video_detail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/css-queries.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/css-queries.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/conts.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/conts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/templates/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/templates/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/info_foot.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/info_foot.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,106 +18,58 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/huyen.php">
+        <entry file="file://$PROJECT_DIR$/admin/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="112" column="78" selection-start-line="112" selection-start-column="69" selection-end-line="112" selection-end-column="78" />
+            <state relative-caret-position="104">
+              <caret line="31" column="34" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="31" selection-end-column="34" />
               <folding>
-                <element signature="n#div#0;n#article#0;n#div#1;n#!!top" />
+                <element signature="n#table#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/css-queries.css">
+        <entry file="file://$PROJECT_DIR$/admin/conts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="1358" column="1" selection-start-line="1358" selection-start-column="1" selection-end-line="1358" selection-end-column="1" />
+            <state relative-caret-position="1118">
+              <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/tag_bds.php">
+        <entry file="file://$PROJECT_DIR$/admin/menu.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="936">
-              <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
-              <folding>
-                <element signature="n#div#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/filter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2089">
-              <caret line="110" column="41" selection-start-line="110" selection-start-column="41" selection-end-line="110" selection-end-column="41" />
-              <folding>
-                <element signature="n#select#0;n#li#0;n#ul#0;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#style#0;n#select#0;n#div#1;n#li#5;n#ul#0;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/title_17.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-612">
-              <caret line="805" column="24" selection-start-line="805" selection-start-column="24" selection-end-line="805" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/title.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/dangky.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="324" column="76" selection-start-line="324" selection-start-column="53" selection-end-line="324" selection-end-column="76" />
-              <folding>
-                <element signature="n#style#0;n#article#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="237">
+              <caret line="91" column="67" selection-start-line="91" selection-start-column="67" selection-end-line="91" selection-end-column="67" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/module/forgetpass.php">
+        <entry file="file://$PROJECT_DIR$/module/info_foot.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1352">
-              <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
-              <folding>
-                <element signature="n#style#0;n#article#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#article#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="156">
+              <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/.htaccess">
+        <entry file="file://$PROJECT_DIR$/admin/login/login_dangnhap.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-236" />
+            <state relative-caret-position="43">
+              <caret line="128" column="24" selection-start-line="128" selection-start-column="12" selection-end-line="128" selection-end-column="24" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/dangnhap.php">
+        <entry file="file://$PROJECT_DIR$/admin/templates/admin.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="166" column="81" selection-start-line="166" selection-start-column="58" selection-end-line="166" selection-end-column="81" />
-              <folding>
-                <element signature="n#style#0;n#article#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#p#0;n#li#2;n#ul#0;n#form#0;n#div#1;n#div#0;n#article#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="130">
+              <caret line="5" column="14" selection-end-line="301" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -178,11 +96,15 @@
       <find>trên website www.bdstphcm.com</find>
       <find>trên website www.batdongsanabc.vn</find>
       <find>Chào mừng bạn đến với</find>
-      <find>BDSTPHCM</find>
       <find>BẤT ĐỘNG SẢN TP.HCM</find>
       <find>quen-mat-khau.html</find>
       <find>class=&quot;btn btn-default&quot;</find>
       <find>quen</find>
+      <find>Quên mật khẩu</find>
+      <find>BDSTPHCM</find>
+      <find>Phần mềm</find>
+      <find>rao</find>
+      <find>Bản quyền © 2017 BẤT ĐỘNG SẢN TP.HCM</find>
     </findStrings>
     <replaceStrings>
       <replace>/</replace>
@@ -221,6 +143,13 @@
         <option value="$PROJECT_DIR$/module/dangnhap.php" />
         <option value="$PROJECT_DIR$/module/dangky.php" />
         <option value="$PROJECT_DIR$/module/forgetpass.php" />
+        <option value="$PROJECT_DIR$/module/slidebar_login.php" />
+        <option value="$PROJECT_DIR$/admin/login/login_dangnhap.php" />
+        <option value="$PROJECT_DIR$/admin/templates/admin.css" />
+        <option value="$PROJECT_DIR$/admin/admin.php" />
+        <option value="$PROJECT_DIR$/admin/conts.php" />
+        <option value="$PROJECT_DIR$/admin/menu.php" />
+        <option value="$PROJECT_DIR$/module/info_foot.php" />
       </list>
     </option>
   </component>
@@ -250,6 +179,23 @@
             <path>
               <item name="bds" type="b2602c69:ProjectViewProjectNode" />
               <item name="bds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bds" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bds" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bds" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bds" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bds" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bds" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -292,15 +238,16 @@
       <option name="presentableId" value="Default" />
       <updated>1592504760352</updated>
       <workItem from="1592504761907" duration="9811000" />
-      <workItem from="1592635548352" duration="5640000" />
+      <workItem from="1592635548352" duration="6414000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6208000" />
+    <option name="totallyTimeSpent" value="6982000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="795" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -561,37 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/filter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2089">
-          <caret line="110" column="41" selection-start-line="110" selection-start-column="41" selection-end-line="110" selection-end-column="41" />
-          <folding>
-            <element signature="n#select#0;n#li#0;n#ul#0;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#style#0;n#select#0;n#div#1;n#li#5;n#ul#0;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/title_17.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612">
-          <caret line="805" column="24" selection-start-line="805" selection-start-column="24" selection-end-line="805" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/title.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/huyen.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="112" column="78" selection-start-line="112" selection-start-column="69" selection-end-line="112" selection-end-column="78" />
-          <folding>
-            <element signature="n#div#0;n#article#0;n#div#1;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/managedn.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-475">
@@ -609,20 +525,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/css-queries.css">
+    <entry file="file://$PROJECT_DIR$/module/slidebar_login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="1358" column="1" selection-start-line="1358" selection-start-column="1" selection-end-line="1358" selection-end-column="1" />
+        <state relative-caret-position="162">
+          <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/dangnhap.php">
+    <entry file="file://$PROJECT_DIR$/module/forgetpass.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="166" column="81" selection-start-line="166" selection-start-column="58" selection-end-line="166" selection-end-column="81" />
+        <state relative-caret-position="1352">
+          <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
           <folding>
             <element signature="n#style#0;n#article#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#p#0;n#li#2;n#ul#0;n#form#0;n#div#1;n#div#0;n#article#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#article#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -637,19 +553,102 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/module/title.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/title_17.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-612">
+          <caret line="805" column="24" selection-start-line="805" selection-start-column="24" selection-end-line="805" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/filter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2089">
+          <caret line="110" column="41" selection-start-line="110" selection-start-column="41" selection-end-line="110" selection-end-column="41" />
+          <folding>
+            <element signature="n#select#0;n#li#0;n#ul#0;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#style#0;n#select#0;n#div#1;n#li#5;n#ul#0;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/css-queries.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="1358" column="1" selection-start-line="1358" selection-start-column="1" selection-end-line="1358" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/huyen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="112" column="78" selection-start-line="112" selection-start-column="69" selection-end-line="112" selection-end-column="78" />
+          <folding>
+            <element signature="n#div#0;n#article#0;n#div#1;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-236" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/forgetpass.php">
+    <entry file="file://$PROJECT_DIR$/module/dangnhap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1352">
-          <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+        <state relative-caret-position="213">
+          <caret line="166" column="81" selection-start-line="166" selection-start-column="58" selection-end-line="166" selection-end-column="81" />
           <folding>
             <element signature="n#style#0;n#article#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#article#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#p#0;n#li#2;n#ul#0;n#form#0;n#div#1;n#div#0;n#article#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/login/login_dangnhap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="128" column="24" selection-start-line="128" selection-start-column="12" selection-end-line="128" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="14" selection-end-line="301" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="31" column="34" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="31" selection-end-column="34" />
+          <folding>
+            <element signature="n#table#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/conts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1118">
+          <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="91" column="67" selection-start-line="91" selection-start-column="67" selection-end-line="91" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/info_foot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
         </state>
       </provider>
     </entry>

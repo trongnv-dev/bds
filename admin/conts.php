@@ -41,6 +41,6 @@
 		$foot=get_records("tbl_config","id=1"," "," "," ");
 		$row_foot=mysql_fetch_assoc($foot);
 	?>	
-  <span class="copy">BDSTPHCM</span><br />
-        <strong>Địa chỉ :</strong>778/56. Thống Nhất, Phường 15, Gò Vâp. TP HCM<br />
+  <span class="copy">Sàn giao dịch Bất Động Sản</span><br />
+        <strong>Địa chỉ :</strong><br />
 </div><!--foot -->

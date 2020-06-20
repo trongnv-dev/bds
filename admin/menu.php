@@ -89,7 +89,7 @@ $row_tbl_users=getRecord('tbl_users',"id = '".$_SESSION['kt_login_id']."'");
                                 <li><a href="admin.php?act=bds_category">Danh mục nhà đất</a></li>
                                 <?php }?>
                                 <? if(userPermissEdit($row_tbl_users['listEdit'],2,1)==true || $_SESSION['kt_login_level']==4 ||   $_SESSION['kt_login_level']==-1 ){?>
-                                <li><a href="admin.php?act=bds">Rao vặt nhà đất</a></li>
+                                <li><a href="admin.php?act=bds">Tin nhà đất</a></li>
                                 <li><a href="admin.php?act=bdsspam">Tin Spam</a></li>
                                 <? } ?>
                                  
@@ -303,23 +303,6 @@ $row_tbl_users=getRecord('tbl_users',"id = '".$_SESSION['kt_login_id']."'");
                 <?php }?>
                 
                 <? if($_SESSION['kt_login_level']==4 ||   $_SESSION['kt_login_level']==-1 ){?>
-                <li  <?php if($frame=="program" ) echo 'class="active"';?>>
-                    <a href="#">
-                        <span class="line_menu_1">
-                            <span class="line_menu_2"> 
-                                Phần mềm
-                            </span>
-                        </span>
-                    </a> 
-                    
-                    <ul class="menu_child" > 
-                     
-                        <li><a href="admin.php?act=program">Tài khoản</a> </li>
-                      	<li><a href="admin.php?act=programcus">Khách hàng</a> </li>
-                        
-                    </ul>
-                    
-                </li>
 				<li  <?php if($frame=="thamdinh" ) echo 'class="active"';?>>
 						<a href="admin.php?act=thamdinh">Thẩm Định</a>
                     

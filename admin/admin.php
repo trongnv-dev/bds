@@ -18,7 +18,7 @@
 <script src="../lib/toolstip/ajax-dynamic-content.js" type="text/javascript"></script>
 <script src="../lib/toolstip/home.js" type="text/javascript"></script>
 <script src="../lib/swfobject_modified.js" type="text/javascript"></script>-->
-<script type="text/javascript" src="/scripts/jquery.geocomplete.js"></script>
+<!--<script type="text/javascript" src="/scripts/jquery.geocomplete.js"></script>-->
 </head>
 
 <body>
@@ -32,7 +32,7 @@
             </div><!--dangnhap -->
         </div><!--banner -->
         <div id="menu"><?php  include("menu.php") ?></div><!--menu -->
-   
+
     <div id="cen"  >
     <table width="100%">
        <tr>

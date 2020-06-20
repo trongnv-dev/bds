@@ -214,7 +214,7 @@ body {
 	height: 27px;
 	padding: 0 8px;
 	font-size: 11px;
-	font-family: Arial, sans-serif, Helvetica;	
+	font-family: Arial, sans-serif, Helvetica;
 	font-weight: 400;
 }
 .ipt_bdt:focus {border: 1px solid #999;}
@@ -236,14 +236,14 @@ body {
 .btn_bdt {text-align: center; margin-top: 20px;}
 .btn_bdt input {
 	font-size: 12px;
-	font-family: Arial, sans-serif, Helvetica;	
+	font-family: Arial, sans-serif, Helvetica;
 	font-weight: 400;
 	text-transform: uppercase;
 	font-weight: bold;
 	background: #40b01a;
 	border: none;
 	border-bottom: 2px solid #3d9b20;
-	padding: 5px 20px;	
+	padding: 5px 20px;
 	color: #fff;
 	cursor: pointer;
 	-webkit-appearance: none;
@@ -258,7 +258,7 @@ body {
 	width: 100%;
 	padding: 8px;
 	font-size: 11px;
-	font-family: Arial, sans-serif, Helvetica;	
+	font-family: Arial, sans-serif, Helvetica;
 	font-weight: 400;
 	resize: vertical;
 	min-height: 50px;
