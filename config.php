@@ -1,5 +1,6 @@
 <?php  
 	//ob_start('ob_gzhandler');
+    session_start();
 	ob_start();
 
 
@@ -49,23 +50,5 @@ ini_set('suhosin.session.cryptdocroot', 0);
 
 ini_set('session.cookie_domain', '.'.$_SERVER['HTTP_HOST']);
 session_set_cookie_params (0, '/', '.'.$_SERVER['HTTP_HOST']);
-
-
-session_start();
-session_name('kh_login_id');
-session_name('kh_login_username');
-session_name('online');
-session_name('dayidsp');
-session_name('daySoluong');
-session_name('dayDongia');
-session_name('dayMaSP');
-session_name('dayurlsp');
-session_name('dayloaisp');
-session_name('tongso');
-session_name('captcha_code');
-session_name('kt_login_id');
-session_name('kt_login_username');
-session_name('kt_login_level');
-session_name('kt_thanhpho');
 
 ?>

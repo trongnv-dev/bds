@@ -3,8 +3,7 @@
 	require("../common_start.php");
 	include("../lib/func.lib.php");
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "hrvp://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="hrvp://www.w3.org/1999/xhtml">
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Quản trị Website</title>
@@ -14,17 +13,17 @@
 <script type="text/javascript" src="../scripts/map/js/jquery-1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="../scripts/ckeditor/ckeditor.js"></script>
 <script type="text/javascript" src="../lib/ckfinder/ckfinder.js"></script>
-<!--<script src="../lib/toolstip/ajax.js" type="text/javascript"></script>
+<script src="../lib/toolstip/ajax.js" type="text/javascript"></script>
 <script src="../lib/toolstip/ajax-dynamic-content.js" type="text/javascript"></script>
 <script src="../lib/toolstip/home.js" type="text/javascript"></script>
-<script src="../lib/swfobject_modified.js" type="text/javascript"></script>-->
-<!--<script type="text/javascript" src="/scripts/jquery.geocomplete.js"></script>-->
+<script src="../lib/swfobject_modified.js" type="text/javascript"></script>
+<script type="text/javascript" src="/scripts/jquery.geocomplete.js"></script>
 </head>
 
 <body>
 <div id="main">
 	<!--<div id="ketop"></div>--><!--ketop -->
-	 
+
         <div id="banner" style="">
           <img src="../imgs/logo_batdongsan.png" vspace="10" align="left" />
           <div id="dangnhap">
