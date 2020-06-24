@@ -1,128 +1,99 @@
-<nav class="nav_menu">
-    <div class="min_wrap">
+<nav class="navbar navbar-default ">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="<?php echo $linkrootbds ?>"><img src="<?php echo $linkrootbds ?>/templates/assets/img/logo.png" alt="Huy Dung Store" style="width: 15%;"></a>
+        </div>
 
-        <ul class="ul_menu">
-            <li <?php if ($frame == "" || $frame == "home") { ?> class="active" <?php } ?>>
-                <a href="<?php echo $linkrootbds ?>" title="Trang chủ">
-                    <span class="line_menu_1">
-                        <span class="line_menu_2">
-                            <img src="<?php echo $linkrootbds ?>imgs/layout/home.png" alt="">
-                        </span>
-                    </span>
-                </a>
-            </li>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse yamm" id="navigation">
+            <div class="button navbar-right">
+                <?php if ($_SESSION['kh_login_username'] == "") { ?>
+                <button class="navbar-btn nav-button wow bounceInRight login" onclick=" window.open('<?php echo $linkrootbds ?>dang-nhap.html')" data-wow-delay="0.4s">Đăng Nhập</button>
+                <?php } ?>
+                <button class="navbar-btn nav-button wow fadeInRight" onclick=" window.open('<?php echo $linkrootbds ?>dang-tin.html')" data-wow-delay="0.5s">Đăng Tin</button>
+            </div>
+            <ul class="main-nav nav navbar-nav navbar-right">
+<!--                <li class="wow fadeInDown" data-wow-delay="0.1s">-->
+<!--                    <a class="--><?php //if ($frame == "" || $frame == "home") { echo "active"; } ?><!--" href="--><?php //echo $linkrootbds ?><!--" title="Trang chủ" style="padding: 0;">-->
+<!--                        <img src="--><?php //echo $linkrootbds ?><!--imgs/layout/home.png" alt="Trang chủ" style="width: 50px">-->
+<!--                    </a>-->
+<!--                </li>-->
 
-            <?php
-            $cate = get_records("tbl_rv_category", " parent=2 and cate=0", "sort ASC", " ", " ");
-            while ($row_cate = mysql_fetch_assoc($cate)) {
-                ?>
-                <li <?php if (((get_field('tbl_rv_category', 'subject', $_GET['bds'], 'cate') == 0 && (get_field('tbl_rv_category', 'subject', $_GET['bds'], 'id') == $row_cate['id'] || get_field('tbl_rv_category', 'subject', $_GET['bds'], 'parent') == $row_cate['id']) && get_field('tbl_rv_item', 'subject', $_GET['bds'], 'id') == "") || (get_field('tbl_rv_item', 'subject', $_GET['bds'], 'cate') == 0 && get_field('tbl_rv_category', 'id', get_field('tbl_rv_item', 'subject', $_GET['bds'], 'parent'), 'parent') == $row_cate['id'])) && ($frame != "tinnhadat" && $frame != "duan" && $frame != "doanhnghiep" && $frame != "video" && $frame != "video_detail" && $frame != "home" && $frame != "")) { ?>class="active" <?php } ?>>
-                    <a href="<?php echo $linkrootbds ?><?= $row_cate['subject'] ?>.html"
-                       title="<?= $row_cate['name'] ?>">
-                    <span class="line_menu_1">
-                        <span class="line_menu_2"> 
-                            <?= $row_cate['name'] ?>
-                        </span>
-                    </span>
+                <?php
+                $cate = get_records("tbl_rv_category", " parent=2 and cate=0", "sort ASC", " ", " ");
+                while ($row_cate = mysql_fetch_assoc($cate)) {
+                    ?>
+                    <li class="dropdown ymm-sw " data-wow-delay="0.1s">
+                        <a href="<?php echo $linkrootbds ?><?= $row_cate['subject'] ?>.html" class="dropdown-toggle <?php if (((get_field('tbl_rv_category', 'subject', $_GET['bds'], 'cate') == 0 && (get_field('tbl_rv_category', 'subject', $_GET['bds'], 'id') == $row_cate['id'] || get_field('tbl_rv_category', 'subject', $_GET['bds'], 'parent') == $row_cate['id']) && get_field('tbl_rv_item', 'subject', $_GET['bds'], 'id') == "") || (get_field('tbl_rv_item', 'subject', $_GET['bds'], 'cate') == 0 && get_field('tbl_rv_category', 'id', get_field('tbl_rv_item', 'subject', $_GET['bds'], 'parent'), 'parent') == $row_cate['id'])) && ($frame != "tinnhadat" && $frame != "duan" && $frame != "doanhnghiep" && $frame != "video" && $frame != "video_detail" && $frame != "home" && $frame != "")) { echo "active"; } ?>"
+                           data-toggle="dropdown" data-hover="dropdown" data-delay="200" title="<?= $row_cate['name'] ?>"><?= $row_cate['name'] ?> <b class="caret"></b></a>
+                        <ul class="dropdown-menu navbar-nav">
+                            <?php
+                            $cate1 = get_records("tbl_rv_category", " cate=0 and parent='" . $row_cate['id'] . "'", "sort ASC", " ", " ");
+                            while ($row_cate1 = mysql_fetch_assoc($cate1)) {
+                                ?>
+                                <li>
+                                    <a href="<?php echo $linkrootbds ?><?= $row_cate1['subject'] ?>.html"> <?= $row_cate1['name']; ?></a>
+                                </li>
+                            <?php } ?>
+                        </ul>
+                    </li>
+                <?php } ?>
+
+                <!-- Tin nhà đất-->
+                <li class="dropdown ymm-sw " data-wow-delay="0.1s">
+                    <a class="dropdown-toggle <?php if ($frame == "tinnhadat" || (get_field('tbl_rv_category', 'subject', $_GET['bds'], 'cate') == 1 && $_GET['bds'] != "") || (get_field('tbl_rv_item', 'subject', $_GET['bds'], 'cate') == 1 && $_GET['bds'] != "")) { echo "active"; } ?>"
+                       href="<?php echo $linkrootbds ?>tin-tuc-nha-dat.html"
+                       data-toggle="dropdown" data-hover="dropdown" data-delay="200" title="Tin nhà đất">Tin nhà đất
                     </a>
-                    <ul class="menu_child">
+                    <ul class="dropdown-menu navbar-nav">
                         <?php
-                        $cate1 = get_records("tbl_rv_category", " cate=0 and parent='" . $row_cate['id'] . "'", "sort ASC", " ", " ");
-                        while ($row_cate1 = mysql_fetch_assoc($cate1)) {
+                        $cate = get_records("tbl_rv_category", " parent=2 and cate=1", "sort ASC", " ", " ");
+                        while ($row_cate = mysql_fetch_assoc($cate)) {
                             ?>
                             <li>
-                                <a href="<?php echo $linkrootbds ?><?= $row_cate1['subject'] ?>.html"> <?= $row_cate1['name']; ?></a>
+                                <a href="<?php echo $linkrootbds ?><?= $row_cate['subject'] ?>.html"> <?= $row_cate['name']; ?></a>
                             </li>
                         <?php } ?>
-
                     </ul>
                 </li>
-            <?php } ?>
+                <!-- Video dự án-->
+                <li class="wow fadeInDown" data-wow-delay="0.4s"><a class="<?php if ($frame == "video" || $frame == "video_detail") { echo "active"; } ?>" href="<?php echo $linkrootbds ?>video.html" title="Video dự án">Video dự án</a></li>
+                <!-- Thẩm định giá miễn phí-->
+                <li class="wow fadeInDown" data-wow-delay="0.4s"><a class="<?php if ($frame == "thamdinhgia") { echo "active"; } ?>" href="<?php echo $linkrootbds ?>tham-dinh-gia.html" title="Thẩm định giá">Thẩm định giá</a></li>
+                <!-- Ký Gửi-->
+                <li class="wow fadeInDown" data-wow-delay="0.4s"><a class="<?php if ($frame == "kyguinhadat") { echo "active"; } ?>" href="<?php echo $linkrootbds ?>ky-gui-nha-dat.html" title="Ký Gửi Nhà Đất">Ký Gửi</a></li>
 
-            <li <?php if ($frame == "tinnhadat" || (get_field('tbl_rv_category', 'subject', $_GET['bds'], 'cate') == 1 && $_GET['bds'] != "") || (get_field('tbl_rv_item', 'subject', $_GET['bds'], 'cate') == 1 && $_GET['bds'] != "")) { ?>class="active" <?php } ?> >
-                <a href="<?php echo $linkrootbds ?>tin-tuc-nha-dat.html" title="Tin nhà đất">
-                    <span class="line_menu_1">
-                        <span class="line_menu_2"> 
-                            Tin nhà đất  
-                        </span>
-                    </span>
-                </a>
-                <ul class="menu_child">
+                <?php if ($_SESSION['kh_login_username'] != "") { ?>
 
-                    <?php
-                    $cate = get_records("tbl_rv_category", " parent=2 and cate=1", "sort ASC", " ", " ");
-                    while ($row_cate = mysql_fetch_assoc($cate)) {
-                        ?>
-                        <li>
-                            <a href="<?php echo $linkrootbds ?><?= $row_cate['subject'] ?>.html"> <?= $row_cate['name']; ?></a>
-                        </li>
-                    <?php } ?>
+                    <li class="dropdown ymm-sw " data-wow-delay="0.1s">
+                        <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200" title="Tin nhà đất">
+                            Chào: <?php echo $_SESSION['kh_login_username']; ?>
+                        </a>
+                        <ul class="dropdown-menu navbar-nav">
+                            <li>
+                                <a href="<?php echo $linkrootbds ?>quan-ly-tin-dang.html">Quản lý tin</a>
+                            </li>
+                            <li>
+                                <a href="<?php echo $linkrootbds ?>sua-thong-tin.html">Thông tin cá nhân</a>
+                            </li>
+                            <li>
+                                <a href="<?php echo $linkrootbds ?>doi-mat-khau.html">Đổi mật khẩu</a>
+                            </li>
+                            <li>
+                                <a href="<?php echo $linkrootbds ?>thoat.html">Thoát</a>
+                            </li>
+                        </ul>
+                    </li>
+                <?php }  ?>
 
-                </ul>
-            </li>
-
-
-            <!-- <li <?php if ($frame == "duan" || (get_field('tbl_rv_category', 'subject', $_GET['bds'], 'cate') == 2) || (get_field('tbl_rv_item', 'subject', $_GET['bds'], 'cate') == 2 && $_GET['bds'] != "")) { ?>class="active" <?php } ?>>
-                <a href="<?php echo $linkrootbds ?>du-an.html" title="Mua Bán Nhà Đất, Bất Động Sản Cần Thơ, Miền Tây">
-                    <span class="line_menu_1">
-                        <span class="line_menu_2"> 
-                            Nhà đất hot
-                        </span>
-                    </span>
-                </a>
-                <ul class="menu_child">
-                	<?php
-            $cate = get_records("tbl_rv_category", " parent=2 and cate=2", "sort ASC", " ", " ");
-            while ($row_cate = mysql_fetch_assoc($cate)) {
-                ?>
-                    <li><a href="<?php echo $linkrootbds ?><?= $row_cate['subject'] ?>.html"> <?= $row_cate['name']; ?></a> </li>
-                    <?php } ?>
-                     
-                </ul>
-            </li> -->
-
-            <li <?php if ($frame == "video" || $frame == "video_detail") { ?>class="active" <?php } ?>>
-                <a href="<?php echo $linkrootbds ?>video.html" title=" Video dự án">
-                    <span class="line_menu_1">
-                        <span class="line_menu_2"> 
-                            Video dự án
-                        </span>
-                    </span>
-                </a>
-            </li>
-            <li <?php if ($frame == "thamdinhgia") { ?>class="active" <?php } ?>>
-                <a href="<?php echo $linkrootbds ?>tham-dinh-gia.html" title=" Thẩm định giá">
-                    <span class="line_menu_1">
-                        <span class="line_menu_2"> 
-                           Thẩm định giá miễn phí
-                        </span>
-                    </span>
-                </a>
-            </li>
-            <li <?php if ($frame == "kyguinhadat") { ?>class="active" <?php } ?>>
-                <a href="<?php echo $linkrootbds ?>ky-gui-nha-dat.html" title=" Ký Gửi Nhà Đất">
-                    <span class="line_menu_1">
-                        <span class="line_menu_2"> 
-                           Ký Gửi
-                        </span>
-                    </span>
-                </a>
-            </li>
-        </ul><!-- End .ul_menu -->
-
-        <div class="clear"></div>
-
-        <a class="icon_menu_mobile" href="javascript:void(0)" val="0"></a>
-
-        <a href="<?php echo $linkrootbds ?>dang-tin.html" class="btn_dt"></a>
-        <!--<div class="f_btn_dt" style="display: none;">
-            <ul>
-                <li>
-                    <a href="">Đăng tin nhà đất</a>
-                </li> 
-              
             </ul>
-        </div> -->
-
-    </div><!-- End .min_wrap -->
-</nav><!-- End .nav_menu -->
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>

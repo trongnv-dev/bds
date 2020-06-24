@@ -1,79 +1,119 @@
-<div class="banner">
-    <div class="min_wrap">
+<div class="slider-area">
+    <div class="slider">
+        <div id="bg-slider" class="owl-carousel owl-theme">
 
-        <a class="logo" href="<?php echo $linkrootbds ?>" title="bat dong san">
-            <img src="<?php echo $linkrootbds ?>imgs/layout/logo.png" alt="bat dong san" width="192" height="80">
-        </a>
+            <div class="item"><img src="<?php echo $linkrootbds ?>/templates/assets/img/slide1/slider-image-2.jpg" alt="The Last of us"></div>
+            <div class="item"><img src="<?php echo $linkrootbds ?>/templates/assets/img/slide1/slider-image-1.jpg" alt="GTA V"></div>
 
-        <div class="user_header">
-            <ul>
-                <?php if ($_SESSION['kh_login_username'] != "") { ?>
-                    <li>
-                        <a class="show_user_login"
-                           href="javascript:void(0)">Chào: <?php echo $_SESSION['kh_login_username']; ?></a>
-                        <div class="m_user_login" style="display: none;">
-                            <a href="<?php echo $linkrootbds ?>quan-ly-tin-dang.html">Quản lý tin</a>
-                            <a href="<?php echo $linkrootbds ?>sua-thong-tin.html">Thông tin cá nhân</a>
-                            <a href="<?php echo $linkrootbds ?>doi-mat-khau.html">Đổi mật khẩu</a>
-                            <a href="<?php echo $linkrootbds ?>thoat.html">Thoát</a>
-                        </div><!-- End .m_user_login -->
-                    </li>
-                <?php } else { ?>
-                    <li>
-                        <a href="<?php echo $linkrootbds ?>dang-nhap.html">Đăng nhập</a>
-                    </li>
-                    <li>
-                        <a href="<?php echo $linkrootbds ?>dang-ky.html">Đăng ký</a>
-                    </li>
-                <?php } ?>
-            </ul>
-            <div class="clear"></div>
         </div>
+    </div>
+    <div class="container slider-content">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
+                <h2>property Searching Just Got So Easy</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi deserunt deleniti, ullam commodi sit ipsam laboriosam velit adipisci quibusdam aliquam teneturo!</p>
+            </div>
+        </div>
+    </div>
+</div>
 
-        <div class="search_top_header">
-            <form action="<?php echo $linkrootbds; ?>xu-ly.html" method="POST">
-                <input name="loaitim" type="hidden" value="0"/>
-                <div class="select_item_search">
-                    <span class="sp1_select">
-                        <select class="select22" name="cate">
-                            <?php
-                            $cate = get_records("tbl_rv_category", " parent=2 and cate=0", "sort ASC", " ", " ");
-                            while ($row = mysql_fetch_assoc($cate)) {
-                                ?>
-                                <option value="<?php echo $row['subject']; ?>"><?php echo $row['name']; ?></option>
-                            <?php } ?>
+<!--search index-->
+<div class="home-lager-shearch" style="background-color: rgb(252, 252, 252); padding-top: 25px; margin-top: -125px;">
+    <div class="container">
+        <div class="col-md-12 large-search">
+            <div class="search-form wow pulse">
+                <form action="<?php echo $linkrootbds; ?>xu-ly.html" method="POST" class="form-inline">
+                    <div class="col-md-12">
+                        <h3>Tìm Kiếm Tin</h3>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="col-md-8">
+                            <input name="tagcontent" class="form-control" type="text" placeholder="Nhập từ khóa tìm kiếm..."/>
+                        </div>
+                        <div class="col-md-3">
+                            <select id="basic" class="select22 selectpicker show-tick form-control" name="cate">
+                                <?php
+                                $cate = get_records("tbl_rv_category", " parent=2 and cate=0", "sort ASC", " ", " ");
+                                while ($row = mysql_fetch_assoc($cate)) {
+                                    ?>
+                                    <option value="<?php echo $row['subject']; ?>"><?php echo $row['name']; ?></option>
+                                <?php } ?>
 
-                             <option value="tin-tuc"> Tin tức</option>
-                             <option value="du-an">  Dự án</option>
-                             <option value="doanh-nghiep">  Doanh nghiệp</option>
-                        </select>
-                    </span>
-                </div><!-- End .select_item_search -->
-                <div class="select_input_search">
-                    <input name="tagcontent" class="ipt_s" type="text" placeholder="Nhập từ khóa tìm kiếm..."/>
-                </div><!-- End .select_input_search -->
-                <input class="btn_s" type="submit" value="&nbsp;" name="timbds"/>
-                <div class="clear"></div>
+                                <option value="tin-tuc"> Tin tức</option>
+                                <option value="du-an">  Dự án</option>
+                                <option value="doanh-nghiep">  Doanh nghiệp</option>
+                            </select>
+                        </div>
+                        <div class="col-md-1">
+                            <input type="submit" value="Tìm tin" class="btn btn-default">
+                        </div>
+                    </div>
+                </form>
 
-                <script type="text/javascript">
-                    $(document).ready(function () {
-                        $('select.select22').each(function () {
-                            var title = $(this).attr('title');
-                            if ($('option:selected', this).val() != '') title = $('option:selected', this).text();
-                            $(this)
-                                .css({'z-index': 10, 'opacity': 0, '-khtml-appearance': 'none'})
-                                .after('<span class="sp2_select">' + title + '</span>')
-                                .change(function () {
-                                    var val = $('option:selected', this).text();
-                                    $(this).next().text(val);
+                <form action="<?php echo $linkrootbds; ?>tim-bds.html" method="POST" class="form-inline">
+                    <div class="col-md-12">
+                        <h3>Tìm Kiếm Bất Động Sản</h3>
+                    </div>
+                    <script>
+                        $(document).ready(function () {
+                            $("#tinh-index").change(function () {
+                                var id = $(this).val();
+                                var table = "tbl_quanhuyen";
+                                var tablep = "tbl_quanhuyen_category";
+                                $("#huyen-index").load("<?php echo $linkrootbds?>module/getChildSubject.php?table=" + table + "&tablep=" + tablep + "&id=" + id, function() {
+                                    $('#huyen-index').addClass('selectpicker');
+                                    $('#huyen-index').attr('data-live-search', 'true');
+                                    $('#huyen-index').selectpicker('refresh');
                                 });
+                            });
+                            $("#huyen-index").change(function () {
+                                var id = $(this).val();
+                                var table = "tbl_phuongxa";
+                                var tablep = "tbl_quanhuyen";
+                                $("#phuong-index").load("<?php echo $linkrootbds?>module/getChildSubject.php?table=" + table + "&tablep=" + tablep + "&id=" + id, function() {
+                                    $('#phuong-index').addClass('selectpicker');
+                                    $('#phuong-index').attr('data-live-search', 'true');
+                                    $('#phuong-index').selectpicker('refresh');
+                                });
+                            });
+                            $("#loai-index").change(function () {
+                                var id = $(this).val();
+                                var table = "tbl_rv_category";
+                                var tablep = "tbl_rv_category";
+                                $("#ddCat-index").load("<?php echo $linkrootbds?>module/getChildSubject.php?table=" + table + "&tablep=" + tablep + "&id=" + id);
+                            });
                         });
-                    });
-                </script>
+                    </script>
+                    <div class="col-md-12 ">
+                        <div class="col-md-4">
+                            <select id="tinh-index" class="selectpicker show-tick form-control" name="tinh" data-live-search="true" title="Chọn Thành Phố">
+                                <?php
+                                $cate = get_records("tbl_quanhuyen_category", " ", "sort ASC", " ", " ");
+                                while ($row = mysql_fetch_assoc($cate)) {
+                                    ?>
+                                    <option value="<?php echo $row['subject']; ?>" <?php if ($_SESSION['kt_thanhpho'] == $row['id']) echo 'selected="selected"'; ?>><?php echo $row['name']; ?></option>
+                                <?php } ?>
+                            </select>
+                        </div>
 
-            </form>
-        </div><!-- End .search_top_header -->
+                        <div class="col-md-4">
+                            <select id="huyen-index" class="show-tick form-control" name="huyen" title="Chọn Quận / Huyện">
+                                <option value="">Chọn Quận / Huyện</option>
+                            </select>
+                        </div>
 
-
-    </div><!-- End .min_wrap -->
-</div><!-- End .banner -->
+                        <div class="col-md-4">
+                            <select name="phuong" id="phuong-index" class="show-tick form-control" title="Chọn Phường / Xã">
+                                <option value="">Chọn Phường / Xã</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <input type="hidden" name="guitin" value="guitin"/>
+                        <input type="submit" name="timbds" value="Tìm" class="btn btn-default btn-lg-sheach">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

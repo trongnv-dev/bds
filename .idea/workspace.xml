@@ -3,7 +3,76 @@
   <component name="ChangeListManager">
     <list default="true" id="37bb6dba-a860-47d4-8b82-13f79459e813" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/layout/home.png" beforeDir="false" afterPath="$PROJECT_DIR$/imgs/layout/home.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/banner.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/banner.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/getChildSubject.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/getChildSubject.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/menu_main.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/menu_main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/news_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/news_home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/processFrame.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/processFrame.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/slide_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/slide_home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/xuly_bds.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/xuly_bds.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/css/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/animate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/css/bootstrap-select.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/bootstrap-select.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/css/bootstrap-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/bootstrap-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/font-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/css/fontello.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/fontello.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/css/icheck.min_all.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/icheck.min_all.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/css/ion.rangeSlider.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/ion.rangeSlider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/css/ion.rangeSlider.skinFlat.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/ion.rangeSlider.skinFlat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/css/ion.rangeSlider.skinNice.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/ion.rangeSlider.skinNice.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/css/jquery.slitslider.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/jquery.slitslider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/css/lightslider.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/lightslider.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/css/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/normalize.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/css/owl.carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/owl.carousel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/css/owl.theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/owl.theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/css/owl.transitions.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/owl.transitions.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/css/price-range.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/price-range.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/css/slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/slider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/css/styleNoJS.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/styleNoJS.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/css/wizard.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/wizard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/fontawesome-webfont_1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/fonts/fontawesome-webfont_1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/fontello/fontello.svg" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/fonts/fontello/fontello.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/icon-7-stroke/css/helper.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/fonts/icon-7-stroke/css/helper.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/icon-7-stroke/css/pe-icon-7-stroke.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/fonts/icon-7-stroke/css/pe-icon-7-stroke.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/icon-7-stroke/fonts/Pe-icon-7-stroke.svg" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/fonts/icon-7-stroke/fonts/Pe-icon-7-stroke.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/js/bootstrap-hover-dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/bootstrap-hover-dropdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/js/bootstrap-select.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/bootstrap-select.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/js/bootstrap-slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/bootstrap-slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/js/bootstrap-wizard.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/bootstrap-wizard.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/js/easypiechart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/easypiechart.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/js/gmaps.init.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/gmaps.init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/js/gmaps.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/gmaps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/js/icheck.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/icheck.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/js/jquery-1.10.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/jquery-1.10.2.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/js/jquery.ba-cond.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/jquery.ba-cond.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/js/jquery.bootstrap.wizard.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/jquery.bootstrap.wizard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/js/jquery.easypiechart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/jquery.easypiechart.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/js/jquery.slitslider.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/jquery.slitslider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/js/jquery.validate.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/jquery.validate.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/js/lightslider.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/lightslider.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/js/modernizr-2.6.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/modernizr-2.6.2.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/js/modernizr.custom.79639.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/modernizr.custom.79639.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/js/owl.carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/owl.carousel.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/js/plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/plugins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/js/price-range.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/price-range.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/js/wizard.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/wizard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/js/wow.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/wow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/assets/js/wow.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/wow.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/npm.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bootstrap/js/npm.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,41 +85,19 @@
       <executable />
     </execution>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>Trang chủ</find>
-      <find>padding-top-40</find>
-      <find>TÌM KIẾM NHANH</find>
-      <find>.slx_ttp</find>
-      <find>BẤT ĐỘNG SẢN KHÁC</find>
-      <find>Tìm được</find>
-      <find>Tin kiểm duyệt</find>
-      <find>http://www.bdstphcm.org</find>
-      <find>http://www.bdstphcm.org/</find>
-      <find>&lt;div class=&quot;content-area recent-property&quot; style=&quot;padding-bottom: 60px; background-color: rgb(252, 252, 252);&quot;&gt;</find>
-      <find>Vị trí:</find>
-      <find>echo rand</find>
-      <find>xmlns:v=&quot;http://rdf.data-vocabulary.org/#&quot;</find>
-      <find>vị trí:</find>
-      <find>TÌM KIẾM BẤT ĐỘNG SẢN</find>
-      <find>trên website www.bdstphcm.com</find>
-      <find>trên website www.batdongsanabc.vn</find>
-      <find>Chào mừng bạn đến với</find>
-      <find>BẤT ĐỘNG SẢN TP.HCM</find>
-      <find>quen-mat-khau.html</find>
-      <find>class=&quot;btn btn-default&quot;</find>
-      <find>quen</find>
-      <find>Quên mật khẩu</find>
-      <find>BDSTPHCM</find>
-      <find>Phần mềm</find>
-      <find>rao</find>
-      <find>Bản quyền © 2017 BẤT ĐỘNG SẢN TP.HCM</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>/</replace>
-      <replace>&lt;div class=&quot;content-area recent-property&quot; style=&quot;background-color: rgb(252, 252, 252);&quot;&gt;</replace>
-      <replace />
-    </replaceStrings>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,14 +109,10 @@
       </set>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="795" />
-  </component>
   <component name="ProjectId" id="1dVKKzGH3dGI8vUp7tGE227dkXT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/module" />
@@ -105,6 +148,7 @@
       <updated>1592504760352</updated>
       <workItem from="1592504761907" duration="9811000" />
       <workItem from="1592635548352" duration="6625000" />
+      <workItem from="1593012780283" duration="7205000" />
     </task>
     <servers />
   </component>
