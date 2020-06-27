@@ -1,8 +1,9 @@
 <?php
+
 	$idcity=$row_quanhuyen['id'];
 	$idtinh=$idcity;
-	
-	$pageSize = 30;
+    $title = get_field('tbl_quanhuyen_category', 'id', $idtinh, 'name');
+	$pageSize = 15;
 	$totalRows = 0;
 	$xeptheo='id';
 	$dem=1;
@@ -32,65 +33,82 @@
 	$bds=get_records("tbl_rv_item","status=1  and cate=0 AND idcity='".$idcity."' order by $xapxep limit ".$startRow.",".$pageSize," "," "," ");	
  
 ?>
-	<div class="f_prod">
-            <div class="block_prod">
-                <div class="content-area recent-property" style="background-color: rgb(252, 252, 252);">
-                    <div class="">
-                        <div class="row">
-                            <div class="col-md-12 properties-page">
-                                <div class="col-md-12 ">
-                                    <div id="list-type" class="proerty-th">
-                                        <?php
-                                        while($row_bds=mysql_fetch_assoc($bds)){
-                                            ?>
-                                            <div class="col-sm-6 col-md-3 p0">
-                                                <div class="box-two proerty-item">
-                                                    <div class="item-thumb">
-                                                        <a href="<?php echo $linkrootbds?><?php echo $row_bds['subject'];?>.html" title="<?php echo $row_bds['name'];?>">
-                                                            <?php
-                                                            if($row_bds['image']!="") $hinh=$row_bds['image'];else $hinh="imgs/noimage.png";
-                                                            $hinh=$linkrootbds."imagecache/image.php/".$hinh."?width=100&amp;height=100&amp;cropratio=1:1&amp;image=".$linkrootbds.$hinh;
-                                                            ?>
-                                                            <img src="<?php echo $hinh;?>" alt="<?php echo $row_bds['name'];?>">
-                                                        </a>
-                                                    </div>
+<div class="content-area recent-property" style="padding-bottom: 60px; background-color: rgb(252, 252, 252);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 padding-top-40 properties-page">
+                <div class="col-md-12 ">
+                    <div class="col-xs-10 page-subheader sorting pl0">
+                        <h1><?php echo $title; ?></h1>
+                    </div>
 
-                                                    <div class="item-entry overflow">
-                                                        <h5>
-                                                            <a href="<?php echo $linkrootbds?><?php echo $row_bds['subject'];?>.html" title="<?php echo $row_bds['name'];?>">
-                                                                <?php echo catchuoi_tuybien(strip_tags($row_bds['name']),10);?>
-                                                            </a>
-                                                        </h5>
-                                                        <div class="dot-hr"></div>
-                                                        <span class=""><b> Vị trí :</b> <?=get_field('tbl_quanhuyen_category','id',$row_bds['idcity'],'name');?> </span>
-                                                        <p class="proerty-price"> <b> $ Giá :</b> <?php echo  $row_bds['price'];?> <?php echo value_unit($row_bds['donvi']);?>/<?php echo dientich($row_bds['dientich']);?></p>
-                                                        <div class="property-icon">
-                                                            <img src="<?php echo $linkrootbds?>templates/assets/img/icon/room.png"><?php echo $row_bds['tongdtsudung']; ?> m2
-                                                            <br>
-                                                            <img src="<?php echo $linkrootbds?>templates/assets/img/icon/bed.png"> Số phòng: <?php echo $row_bds['sophong']; ?>
-                                                            <br>
-                                                            <img src="<?php echo $linkrootbds?>templates/assets/img/icon/cars.png"><?php echo $row_bds['solau']; ?> tầng
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        <?php } ?>
+                    <div class="col-xs-2 layout-switcher">
+                        <a class="layout-list" href="javascript:void(0);"> <i class="fa fa-th-list"></i> </a>
+                        <a class="layout-grid active" href="javascript:void(0);"> <i class="fa fa-th"></i> </a>
+                    </div><!--/ .layout-switcher-->
+                </div>
+
+                <div class="col-md-12 ">
+                    <div id="list-type" class="proerty-th">
+                        <?php
+                        while ($row_bds = mysql_fetch_assoc($bds)) {
+                            ?>
+                            <div class="col-sm-12 col-sm-6 col-md-4 p0">
+                                <div class="box-two proerty-item">
+                                    <div class="item-thumb">
+                                        <a href="<?php echo $linkrootbds; ?><?php echo $row_bds['subject']; ?>.html"
+                                           title="<?php echo $row_bds['name']; ?>">
+                                            <?php
+                                            if ($row_bds['image'] != "") $hinh = $row_bds['image']; else $hinh = "imgs/noimage.png";
+                                            ?>
+                                            <img src="<?php echo $hinh; ?>" alt="<?php echo $row_bds['name']; ?>">
+                                        </a>
+                                    </div>
+
+                                    <div class="item-entry overflow">
+                                        <h5>
+                                            <a href="<?php echo $linkrootbds ?><?php echo $row_bds['subject']; ?>.html"
+                                               title="<?php echo $row_bds['name']; ?>">
+                                                <?php echo strip_tags($row_bds['name']); ?>
+                                            </a>
+                                        </h5>
+                                        <div class="dot-hr"></div>
+                                        <p style="color: #000;"><b> <i class="fa fa-map-marker"
+                                                                       aria-hidden="true"></i></b> <?= get_field('tbl_quanhuyen', 'id', $row_bds['idquan'], 'name'); ?>
+                                            , <?= get_field('tbl_quanhuyen_category', 'id', $row_bds['idcity'], 'name'); ?>
+                                        </p>
+                                        <p class="text-right proerty-price"> <?php echo number_format($row_bds['price']); ?><?php echo value_unit($row_bds['donvi']); ?></p>
+                                        <p style="display: none;"><?php echo catchuoi_tuybien($row_bds['description'], 15); ?></p>
+                                        <div class="property-icon">
+                                            <img title="Diện Tích"
+                                                 src="<?php echo $linkrootbds ?>/templates/assets/img/icon/room.png"><?php echo $row_bds['tongdtsudung']; ?>
+                                            m2
+                                            <img title="Số Phòng"
+                                                 src="<?php echo $linkrootbds ?>/templates/assets/img/icon/bed.png"><?php echo $row_bds['sophong']; ?>
+                                            <img title="Số Tầng"
+                                                 src="<?php echo $linkrootbds ?>/templates/assets/img/icon/cars.png"><?php echo $row_bds['solau']; ?>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        <?php } ?>
                     </div>
                 </div>
-        	</div><!-- End .block_prod -->
-            
+            </div>
+            <?php include("module/filter_anywhere.php"); ?>
         </div>
- 
-    <div class="page">
-        <div class="PageNum">
-            <?php  
-               echo pagesLinks_new_full_2013($totalRows, $pageSize , $linkroot,"p","page-danh-muc/".$_GET['bds']);
-            ?>
-        </div>
-        <div class="clear"></div>
     </div>
+</div>
+
+<div class="section">
+    <div class="text-center">
+        <div class="pagination">
+            <ul>
+                <?php
+                echo pagesLinks_new_full_2013($totalRows, $pageSize, $linkroot, "p", "page-danh-muc/" . $_GET['bds']);
+                ?>
+            </ul>
+        </div>
+    </div>
+</div>
 

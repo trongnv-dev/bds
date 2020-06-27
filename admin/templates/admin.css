@@ -265,38 +265,39 @@ body {
 }
 
 .box-sizing-fix {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 .note_dt {
-    background: none repeat scroll 0 0 #fffed2;
-    border: 1px solid #f2ba72;
-    color: #f70000;
-    display: block;
-    font-size: 11px;
-    padding: 5px;
+	background: none repeat scroll 0 0 #fffed2;
+	border: 1px solid #f2ba72;
+	color: #f70000;
+	display: block;
+	font-size: 11px;
+	padding: 5px;
 }
 td { padding:5px;}
 .ui-autocomplete {
-  padding: 0;
-  list-style: none;
-  background-color: #fff;
-  width: 218px;
-  border: 1px solid #B0BECA;
-  max-height: 350px;
-  overflow-x: hidden;
+	padding: 0;
+	list-style: none;
+	background-color: #fff;
+	width: 218px;
+	border: 1px solid #B0BECA;
+	max-height: 350px;
+	overflow-x: hidden;
 }
 .ui-autocomplete .ui-menu-item {
-  border-top: 1px solid #B0BECA;
-  display: block;
-  padding: 4px 6px;
-  color: #353D44;
-  cursor: pointer;
+	border-top: 1px solid #B0BECA;
+	display: block;
+	padding: 4px 6px;
+	color: #353D44;
+	cursor: pointer;
 }
 .ui-autocomplete .ui-menu-item:first-child {
-  border-top: none;
+	border-top: none;
 }
 .ui-autocomplete .ui-menu-item.ui-state-focus {
-  background-color: #D5E5F4;
-  color: #161A1C;
+	background-color: #D5E5F4;
+	color: #161A1C;
 }
 #ghichu { width:100%; height:100px;}
+.smallfont{cursor:pointer;}

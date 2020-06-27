@@ -224,11 +224,11 @@
     }
     .client-face > img {
         border: 2px solid #fff;
-        width: 60px;
+        width: 120px;
     }
     .testimonial .item .client-face {
-        right: 15px;
-        top: 100px;
+        right: 125px;
+        top: 145px;
     }
     .footer-copy{
         padding: 0 20px;
@@ -522,8 +522,8 @@
         font-size: 13px;
     }
     .testimonial .item .client-face {
-        top: 130px;
-        right: 25px;
+        top: 155px;
+        right: 120px;
     }
     .single-footer img {
         width: 150px;
@@ -691,8 +691,8 @@
         margin-bottom: 10px;
     }
     .testimonial .item .client-face {
-        right: 17px;
-        top: 100px;
+        right: 75px;
+        top: 160px;
     }
     .single-footer img {
         width: 150px;

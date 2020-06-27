@@ -11,7 +11,7 @@ switch ($frame){
 	case "changeinfo"              : include("module/changeinfo.php");break;
 	case "changepass"              : include("module/changepass.php");break;
 //	case "raovat"                  : include("module/raovat.php");break;
-	case "product_detail"          : include("module/product_detail.php");;break;
+	case "product_detail"          : include("module/product_detail.php");break;
 
 	case "sieuthidiaoc"            : include("module/sieuthidiaoc.php");break;
 	case "tinnhadat"               : include("module/tinnhadat.php");break;

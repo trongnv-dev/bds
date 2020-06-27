@@ -10,7 +10,7 @@ body {
     margin:0;
     font-size:14px;
     line-height: 28px;
-    color: #777;
+    color: #000;
     background: #fff;
     position: relative;
 }
@@ -70,11 +70,12 @@ p {
     margin:0;
 }
 a {
-    color: #d27e04;
+    color: #2157ad;
     outline: 0;
     font-weight: bold;
     -webkit-transition: all .8s ease;
     transition: all .8s ease;
+    /* line-height: 19px; */
 }
 a:hover {
     text-decoration: none;
@@ -354,7 +355,7 @@ input[type="search"]::-webkit-search-decoration {
     width: 90px;
     border-radius: 1px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     -ms-transition: all 0.4s ease;
@@ -1110,7 +1111,7 @@ page-header
     color:#2157ad;
 }
 .layout-switcher {
-    padding: 0px 10px;
+    padding: 35px 10px 0px 10px;
     text-align: right;
 }
 .search-widget fieldset .largesearch-btn{
@@ -1497,31 +1498,34 @@ Asside widgets CSS
 
 .testimonial{
     position: relative;
-    margin-top: 50px;
+    margin-top: 15px;
 }
 .testimonial .item {
-    padding-bottom: 67px;
+    padding-bottom: 50px;
     position: relative;
 }
 .testimonial .item .client-face {
     position: absolute;
-    top: 112px;
-    right: 146px;
+    top: 150px;
+    right: 180px;
     text-align: center;
 }
 .client-face > img {
     border: 5px solid #fff;
     border-radius: 50%;
+    width: 120px;
 }
 .testimonial .owl-theme .owl-controls .owl-page span{
     background: #2157ad
 }
 .client-text {
     border-radius: 2px;
-    padding: 20px 30px;
+    padding: 20px 30px 20px 30px;
     margin: 15px;
     border: 1px solid #ECE9E9;
     background-color: #F5F5F5;
+    height: 190px;
+    overflow: hidden;
 }
 .client-text p {
     line-height: 25px;
@@ -1536,6 +1540,8 @@ Asside widgets CSS
 /*Tools CSS*/
 .p0{
     padding: 0px;
+    /* max-height: 410px; */
+    margin: 5px 0px;
 }
 .overflow{
     overflow: hidden;
@@ -1686,7 +1692,7 @@ proerty-th
 }
 .proerty-th .proerty-item{
     background-color: #FFF;
-    margin: 10px;
+    margin: 2px;
 }
 .proerty-th .proerty-item .item-thumb{
     position: relative;
@@ -1702,7 +1708,8 @@ proerty-th
     display: block;
     position: relative;
     width:100%;
-    opacity: 0.7;
+    height: 300px;
+    opacity: 0.9;
     min-height: 225px;
     max-height: 265px;
 }
@@ -1711,6 +1718,7 @@ proerty-th
 
 }
 .properties-page .proerty-th .proerty-price{
+    font-size: 25px;
     font-weight: 600;
     color: #2157ad;
 }
@@ -1720,6 +1728,8 @@ proerty-th
     color: #9B9B9B;
     letter-spacing: 2px;
     position: relative;
+    height: 40px;
+    overflow: hidden;
 }
 .proerty-th .proerty-item  .item-entry h5::after {
     background: transparent url("../../assets/img/chevron-down.png") no-repeat scroll center center;
@@ -1760,7 +1770,7 @@ proerty-th-list
     padding: 15px 10px;
 }
 .proerty-th-list .col-md-4 .item-thumb{
-    width:40%;
+    width: 35%;
     float: left;
 }
 .proerty-th-list .col-md-4 .item-thumb img {
@@ -1777,14 +1787,14 @@ proerty-th-list
 }
 
 .proerty-th-list .col-md-4 .item-entry{
-    width:60%;
+    width: 65%;
     float: left;
     padding-right: 15px;
 }
 
 
 .proerty-th-list .col-md-3 .item-entry{
-    width:60%;
+    width: 65%;
     float: left;
     padding-right: 15px;
 }
@@ -1793,11 +1803,11 @@ proerty-th-list
     padding: 15px 10px;
 }
 .proerty-th-list .col-md-3 .item-thumb{
-    width:40%;
+    width: 35%;
     float: left;
 }
 .proerty-th-list .col-md-3 .item-thumb img {
-    opacity: 0.7;
+    opacity: 0.9;
     height: 230px;
     vertical-align: middle;
     border: 0px none;
@@ -1810,7 +1820,7 @@ proerty-th-list
     border: none;
 }
 .properties-page .box-two {
-    overflow: hidden !important;
+    /* overflow: hidden !important; */
 }
 .proerty-th-list  .proerty-item .item-entry h5 {
     text-transform: uppercase;
@@ -1834,11 +1844,9 @@ proerty-th-list
     padding: 5px 0px;
     margin-top: 15px;
     background-color: #EDEDED;
-    color: #555;
+    color: #999;
 }
-.property-icon img{
-
-}
+.property-icon img{margin-right: 5px;}
 .proerty-th-list p {
     clear: both;
     padding-top: 25px;
@@ -2084,7 +2092,7 @@ single property page
     padding: 15px;
     color:#FFF;
     padding-bottom: 20px;
-    margin: -15px -15px 25px;
+    margin: -15px 100px 25px;
 }
 .dealer-name{
     margin-top: 6px;
@@ -2350,16 +2358,16 @@ count-area
 }
 
 .asks-first{
-    background-color: rgb(225, 225, 225);
+    background-color: #2157ada1;
     padding: 35px 0px 35px 30px;
     position: relative;
     cursor: pointer;
 }
 .asks-first:hover{
-    background-color: #8C8C8C;
+    background-color: #2157ad;
 }
 .asks-first:hover .asks-first-circle{
-    background-color: #8C8C8C;
+    background-color: #2157ad;
 }
 .asks-first-circle {
     float: left;
@@ -2462,6 +2470,9 @@ count-area
 }
 .item-entry a {
     color: #000;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1px;
 }
 .item-entry a:hover ,.item-entry a:focus {
     color: #999696;
@@ -2682,11 +2693,10 @@ blog
 }
 
 .fqa-title::before {
-
     float: left;
     width: 24px;
     height: 24px;
-    content: "Ã¯ÂÂ§";
+    content: "";
     color: #2157ad;
     font-size: 16px;
     line-height: 24px;
@@ -2891,7 +2901,7 @@ ul.footer-adress li {
 ul.footer-blog li {
     width: 100%;
     display: table;
-    margin-bottom: -20px;
+    margin-bottom: 15px;
 }
 .footer-blog img {
     width: 100%;
@@ -3033,4 +3043,33 @@ ul.footer-blog li {
 }
 #map {
     height: 300px;
+}
+.proerty-th-list .item-entry h5 a{
+    font-size: 21px;
+    line-height: 26px;
+}
+.proerty-th-list .item-entry span{
+    font-size: 20px;
+}
+.proerty-th-list .item-entry span.proerty-price{
+    font-size: 30px;
+}
+.tab_ddk {
+    width: 100%;
+    border: 1px solid #F3F3F3;
+    font-size: 14px;
+}
+.tab_ddk td {
+    padding: 5px;
+    border: 1px solid #F3F3F3;
+    position: relative;
+}
+.tab_ddk .table-active{
+    width: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.page-head a{
+    color: #fff !important;
 }

@@ -41,8 +41,7 @@ date_default_timezone_set('Asia/Ho_Chi_Minh');
         <link rel="stylesheet" href="<?php echo $linkrootbds ?>/templates/assets/css/normalize.css">
         <link rel="stylesheet" href="<?php echo $linkrootbds ?>/templates/assets/css/font-awesome.min.css">
         <link rel="stylesheet" href="<?php echo $linkrootbds ?>/templates/assets/css/fontello.css">
-        <link href="<?php echo $linkrootbds ?>/templates/assets/fonts/icon-7-stroke/css/pe-icon-7-stroke.css"
-              rel="stylesheet">
+        <link href="<?php echo $linkrootbds ?>/templates/assets/fonts/icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
         <link href="<?php echo $linkrootbds ?>/templates/assets/fonts/icon-7-stroke/css/helper.css" rel="stylesheet">
         <link href="<?php echo $linkrootbds ?>/templates/assets/css/animate.css" rel="stylesheet" media="screen">
         <link rel="stylesheet" href="<?php echo $linkrootbds ?>/templates/assets/css/bootstrap-select.min.css">
@@ -58,43 +57,25 @@ date_default_timezone_set('Asia/Ho_Chi_Minh');
         <script src="<?php echo $linkrootbds ?>/templates/assets/js/jquery-1.10.2.min.js"></script>
     </head>
     <body>
-        <div id="wrapper">
-            <div id="preloader">
-                <div id="status">&nbsp;</div>
-            </div>
-            <header id="header">
-                <?php include("module/menu_main.php"); ?>
-                <?php include("module/banner.php"); ?>
+<!--        <div id="preloader">-->
+<!--            <div id="status">&nbsp;</div>-->
+<!--        </div>-->
+        <?php include("module/menu_main.php"); ?>
 
-            </header><!-- End #header -->
+        <?php
+        if ($frame == "dangtin") include("module/dangtin.php");
+        elseif ($frame == "suatin") include("module/suatin.php");
+        elseif ($frame == "dangnhap") include("module/dangnhap.php");
+        elseif ($frame == "dangky") include("module/dangky.php");
+        else include("module/processFrame.php")
+        ?>
 
-            <div id="container">
-                <div class="min_wrap">
+        <?php
+        if ($frame != "dangky" && $frame != "dangnhap" && $frame != "addbds" && $frame != "editbds" && $frame != "addda" && $frame != "editda" && $frame != "adddn" && $frame != "editdn" && $frame != "changeinfo" && $frame != "changepass" && $frame != "manage")
+            include("module/partner.php");
+        ?>
 
-                    <?php
-                    echo $frame;
-                    if ($frame == "dangtin") include("module/dangtin.php");
-                    elseif ($frame == "suatin") include("module/suatin.php");
-                    elseif ($frame == "dangnhap") include("module/dangnhap.php");
-                    elseif ($frame == "dangky") include("module/dangky.php");
-                    else include("module/processFrame.php")
-                    ?>
-
-                </div><!-- End .min_wrap -->
-            </div><!-- End #container -->
-
-            <footer id="footer">
-                <div class="min_wrap">
-
-                    <?php if ($frame != "dangky" && $frame != "dangnhap" && $frame != "addbds" && $frame != "editbds" && $frame != "addda" && $frame != "editda" && $frame != "adddn" && $frame != "editdn" && $frame != "changeinfo" && $frame != "changepass" && $frame != "manage") include("module/partner.php"); ?>
-
-                    <?php include("module/menu_foot.php"); ?>
-
-                    <?php include("module/info_foot.php"); ?>
-
-                </div><!-- End .min_wrap -->
-            </footer><!-- End #footer -->
-        </div><!-- End #wrapper -->
+        <?php include("module/info_foot.php"); ?>
 
         <script src="<?php echo $linkrootbds ?>/templates/assets/js/modernizr-2.6.2.min.js"></script>
 

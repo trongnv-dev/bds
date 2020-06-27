@@ -1,11 +1,3 @@
-<div class="f_cont clearfix">
+<?php include("module/banner.php"); ?>
 
-    <article class="content">
-    
-        <?php include("module/bds_home.php") ;?>	
-        
-    </article><!-- End .content -->
-    
-    <?php include("module/slidebar.php") ;?>
-    
-</div><!-- End .f_cont -->
+<?php include("module/bds_home.php"); ?>

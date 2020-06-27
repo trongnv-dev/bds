@@ -3,76 +3,31 @@
   <component name="ChangeListManager">
     <list default="true" id="37bb6dba-a860-47d4-8b82-13f79459e813" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/layout/home.png" beforeDir="false" afterPath="$PROJECT_DIR$/imgs/layout/home.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/templates/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/templates/admin.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/banner.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/banner.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/getChildSubject.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/getChildSubject.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/func.lib.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/func.lib.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/bds.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/bds.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/bds_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/bds_home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/bds_of_city.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/bds_of_city.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/bds_of_street.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/bds_of_street.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/filter_anywhere.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/filter_anywhere.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/menu_main.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/menu_main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/news_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/news_home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/huyen.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/huyen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/info_foot.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/info_foot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/nhucau.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/nhucau.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/partner.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/partner.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/phuong.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/phuong.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/processFrame.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/processFrame.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/slide_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/slide_home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/xuly_bds.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/xuly_bds.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/css/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/animate.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/css/bootstrap-select.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/bootstrap-select.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/css/bootstrap-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/bootstrap-theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/css/fontello.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/fontello.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/css/icheck.min_all.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/icheck.min_all.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/css/ion.rangeSlider.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/ion.rangeSlider.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/css/ion.rangeSlider.skinFlat.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/ion.rangeSlider.skinFlat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/css/ion.rangeSlider.skinNice.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/ion.rangeSlider.skinNice.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/css/jquery.slitslider.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/jquery.slitslider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/product_detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/product_detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/tag_bds.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/tag_bds.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/tags.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/tags.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/thamdinhgia.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/thamdinhgia.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/assets/css/lightslider.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/lightslider.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/css/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/normalize.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/css/owl.carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/owl.carousel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/css/owl.theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/owl.theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/css/owl.transitions.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/owl.transitions.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/css/price-range.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/price-range.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/assets/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/css/slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/slider.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/css/styleNoJS.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/styleNoJS.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/css/wizard.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/wizard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/fontawesome-webfont_1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/fonts/fontawesome-webfont_1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/fontello/fontello.svg" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/fonts/fontello/fontello.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/icon-7-stroke/css/helper.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/fonts/icon-7-stroke/css/helper.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/icon-7-stroke/css/pe-icon-7-stroke.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/fonts/icon-7-stroke/css/pe-icon-7-stroke.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/fonts/icon-7-stroke/fonts/Pe-icon-7-stroke.svg" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/fonts/icon-7-stroke/fonts/Pe-icon-7-stroke.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/img/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/bootstrap-hover-dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/bootstrap-hover-dropdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/bootstrap-select.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/bootstrap-select.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/bootstrap-slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/bootstrap-slider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/bootstrap-wizard.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/bootstrap-wizard.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/easypiechart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/easypiechart.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/gmaps.init.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/gmaps.init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/gmaps.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/gmaps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/icheck.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/icheck.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/jquery-1.10.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/jquery-1.10.2.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/jquery.ba-cond.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/jquery.ba-cond.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/jquery.bootstrap.wizard.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/jquery.bootstrap.wizard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/jquery.easypiechart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/jquery.easypiechart.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/jquery.slitslider.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/jquery.slitslider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/jquery.validate.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/jquery.validate.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/lightslider.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/lightslider.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/modernizr-2.6.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/modernizr-2.6.2.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/modernizr.custom.79639.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/modernizr.custom.79639.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/owl.carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/owl.carousel.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/plugins.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/price-range.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/price-range.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/wizard.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/wizard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/wow.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/wow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/wow.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/wow.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/bootstrap/js/npm.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bootstrap/js/npm.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,6 +67,7 @@
   <component name="ProjectId" id="1dVKKzGH3dGI8vUp7tGE227dkXT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -148,7 +104,8 @@
       <updated>1592504760352</updated>
       <workItem from="1592504761907" duration="9811000" />
       <workItem from="1592635548352" duration="6625000" />
-      <workItem from="1593012780283" duration="7205000" />
+      <workItem from="1593012780283" duration="7292000" />
+      <workItem from="1593180351055" duration="25957000" />
     </task>
     <servers />
   </component>
