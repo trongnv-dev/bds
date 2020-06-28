@@ -78,21 +78,15 @@ date_default_timezone_set('Asia/Ho_Chi_Minh');
         <?php include("module/info_foot.php"); ?>
 
         <script src="<?php echo $linkrootbds ?>/templates/assets/js/modernizr-2.6.2.min.js"></script>
-
         <script src="<?php echo $linkrootbds ?>/templates/bootstrap/js/bootstrap.min.js"></script>
         <script src="<?php echo $linkrootbds ?>/templates/assets/js/bootstrap-select.min.js"></script>
         <script src="<?php echo $linkrootbds ?>/templates/assets/js/bootstrap-hover-dropdown.js"></script>
-
         <script src="<?php echo $linkrootbds ?>/templates/assets/js/easypiechart.min.js"></script>
         <script src="<?php echo $linkrootbds ?>/templates/assets/js/jquery.easypiechart.min.js"></script>
-
         <script src="<?php echo $linkrootbds ?>/templates/assets/js/owl.carousel.min.js"></script>
-
         <script src="<?php echo $linkrootbds ?>/templates/assets/js/wow.js"></script>
-
         <script src="<?php echo $linkrootbds ?>/templates/assets/js/icheck.min.js"></script>
         <script src="<?php echo $linkrootbds ?>/templates/assets/js/price-range.js"></script>
-
         <script src="<?php echo $linkrootbds ?>/templates/assets/js/main.js"></script>
     </body>
 </html>

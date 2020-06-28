@@ -8,19 +8,6 @@
  
  
 ?>
-<div class="breacrum">
-     <div id="breacrum" >
-         <span typeof="v:Breadcrumb">
-            <a  rel="v:url" property="v:title"  title="Trang chủ" href="<?php echo $linkrootbds?>"> Trang chủ </a>
-        </span>
-        <span typeof="v:Breadcrumb">
-            <a  rel="v:url" property="v:title"  title="Video" href="<?php echo $linkrootbds?>video.html"> Video </a>
-        </span>
-         <span typeof="v:Breadcrumb"> &raquo;
-            <?=$row_sanpham['name']?>
-        </span>
-    </div>
-</div>
  
 <div class="f_cont clearfix">
 

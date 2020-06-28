@@ -1,5 +1,7 @@
 @media (max-width: 480px){
-
+    h1 {
+        font-size: 40px;
+    }
     .welcome_text .page-title h2 {
         color: #9B9B9B;
         text-transform: uppercase;
@@ -84,7 +86,7 @@
         font-size: 12px;
     }
     .navbar .container{
-        padding: 10px 15px;
+        padding: 10px 15px 0px 15px;
     }
     .navbar{
         min-height: 75px;
@@ -93,7 +95,10 @@
         margin-top: 15px;
     }
     .navbar-brand img{
-        width: 110px;
+        /* width: 110px; */
+        width: 40% !important;
+        position: relative;
+        top: -60px;
     }
     .navbar-default .navbar-nav > li > a {
         font-size: 13px;
@@ -293,7 +298,9 @@
 
 
 @media (min-width: 480px) and (max-width: 767px){
-
+    h1 {
+        font-size: 45px;
+    }
     .welcome_text .page-title h2 {
         color: #9B9B9B;
         text-transform: uppercase;
@@ -424,6 +431,9 @@
     }
     .navbar-brand img {
         width: 110px;
+        width: 40% !important;
+        position: relative;
+        top: -65px;
     }
     .navbar-default .navbar-nav > li > a {
         font-size: 13px;
@@ -472,7 +482,7 @@
         height:440px;
     }
     .content-area {
-        padding-top: 100px;
+        /*padding-top: 100px;*/
     }
     #bg-slider .item img {
         height: 440px;
@@ -567,7 +577,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 979px){
-
+    h1 {
+        font-size: 45px;
+    }
     .header-call p span {
         margin-right: 10px;
         font-size: 12px;
@@ -785,4 +797,8 @@
     .proerty-th-list p {
         padding-top: 10px;
     }
+}
+.navbar-toggle.collapsed {
+    position: relative;
+    top: 25px;
 }

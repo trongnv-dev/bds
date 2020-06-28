@@ -15,48 +15,38 @@
 	?>
     <div class="content-area single-property" style="background-color: #FCFCFC;">&nbsp;
         <div class="container">
-            <h1><?=$row_sanpham['name']?></h1>
+            <h1><?php echo ucwords($row_sanpham['name']);?></h1>
             <p><? if($row_sanpham['sonha']!="")  echo $row_sanpham['sonha'].", "?><? if($row_sanpham['idstreet']!="")  echo  get_field('tbl_street','id',$row_sanpham['idstreet'],'name').", ";?> <? if($row_sanpham['idphuong']!="")  echo get_field('tbl_phuongxa','id',$row_sanpham['idphuong'],'name').", ";?><? if($row_sanpham['idquan']!="")  echo get_field('tbl_quanhuyen','id',$row_sanpham['idquan'],'name').", ";?> <?=get_field('tbl_quanhuyen_category','id',$row_sanpham['idcity'],'name');?>  </p>
             <div class="addthis_sharing_toolbox"></div>
             <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52493e8d684da4cc"></script>
             <div class="clearfix padding-top-40" >
-
                 <div class="col-md-9 single-property-content prp-style-2">
                     <div class="">
+                        <?php
+                        $img_array=array();
+                        for($i=0;$i<6;$i++) {
+                            $ii = $i;
+                            if ($i == 0) $i = "";
+                            if ($row_sanpham['image' . $i] != "") {
+                                $img_array[$ii] = $linkrootbds . $row_sanpham['image' . $i];
+                            }
+                        }
+                        if(!empty($img_array)){
+                        ?>
                         <div class="row">
                             <div class="light-slide-item">
                                 <div class="clearfix">
                                     <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
-                                        <?php
-					$img_array=array();
-					$img_larg_array=array();
-					$kk=0;
-					for($i=0;$i<6;$i++){
-						$ii=$i;
-						if($i==0) $i="";
-						if($row_sanpham['image'.$i]!="")
-						{
-							$hinh_crop=$linkrootbds."imagecache/image.php/".$row_sanpham['image'.$i]."?width=94&amp;height=74&amp;cropratio=1:1&amp;image=".$linkrootbds.$row_sanpham['image'.$i];
-							$hinh_larg_crop=$linkrootbds."imagecache/image.php/".$row_sanpham['image'.$i]."?width=460&amp;height=450&amp;cropratio=3:2&amp;image=".$linkrootbds.$row_sanpham['image'.$i];
-							$img_array[$ii]=$hinh_crop;
-							$img_larg_array[$ii]=$hinh_larg_crop;
-							$kk++;
-
-				?>
-                            <li data-thumb="<?php echo $linkrootbds.$row_sanpham['image'.$i];?>">
-                                <img src="<?php echo $linkrootbds.$row_sanpham['image'.$i];?>" style="width: 95%"/>
-                            </li>
-
-                <?php
-						}
-					}
-					?>
-
-
+                                        <?php foreach($img_array as $img_item){ ?>
+                                            <li data-thumb="<?php echo $img_item;?>">
+                                                <img src="<?php echo $img_item;?>" style="width: 95%"/>
+                                            </li>
+                                        <?php } ?>
                                     </ul>
                                 </div>
                             </div>
                         </div>
+                        <?php } ?>
                         <div class="single-property-wrapper">
                             <div class="dealer-widget">
                                 <div class="dealer-content">
@@ -180,43 +170,33 @@
                             <!-- End additional-details area  -->
 
                             <div class="section property-features">
-
                                 <h4 class="s-property-title">Tiện Ích</h4>
-                                <table class="tab_ddk">
-                                    <tbody>
-                                    <tr>
-                                        <td><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Tiện để ở  <?php  if(valueinstr($row_sanpham['dacdiemkhac'],1)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?> </td>
-                                        <td><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Gần trường <?php  if(valueinstr($row_sanpham['dacdiemkhac'],2)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></td>
-                                        <td><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Khu nội bộ <?php  if(valueinstr($row_sanpham['dacdiemkhac'],3)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></td>
-                                        <td><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Truyền hình cáp </td>
-                                    </tr>
-                                    <tr>
-                                        <td><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Tiện làm văn phòng <?php  if(valueinstr($row_sanpham['dacdiemkhac'],4)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></td>
-                                        <td><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Gần bệnh viện <?php  if(valueinstr($row_sanpham['dacdiemkhac'],5)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></td>
-                                        <td><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Có bảo vệ <?php  if(valueinstr($row_sanpham['dacdiemkhac'],6)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></td>
-                                        <td><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Điện thoại</td>
-                                    </tr>
-                                    <tr>
-                                        <td><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Tiện cho sản xuất <?php  if(valueinstr($row_sanpham['dacdiemkhac'],7)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></td>
-                                        <td><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Gần chợ - siêu thị <?php  if(valueinstr($row_sanpham['dacdiemkhac'],8)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></td>
-                                        <td><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Chỗ đậu xe hơi <?php  if(valueinstr($row_sanpham['dacdiemkhac'],9)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></td>
-                                        <td><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Đồng hồ nước <?php  if(valueinstr($row_sanpham['dacdiemkhac'],10)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></td>
-                                    </tr>
-                                    <tr>
-                                        <td><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Tiện kinh doanh <?php  if(valueinstr($row_sanpham['dacdiemkhac'],11)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></td>
-                                        <td><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Gần công viên <?php  if(valueinstr($row_sanpham['dacdiemkhac'],12)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></td>
-                                        <td><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Internet <?php  if(valueinstr($row_sanpham['dacdiemkhac'],13)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></td>
-                                        <td><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Đồng hồ điện <?php  if(valueinstr($row_sanpham['dacdiemkhac'],14)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></td>
-                                    </tr>
-                                    <tr>
-                                        <td><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Máy nước nóng <?php  if(valueinstr($row_sanpham['dacdiemkhac'],15)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></td>
-                                        <td><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Máy lạnh <?php  if(valueinstr($row_sanpham['dacdiemkhac'],16)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></td>
-                                        <td><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Hồ bơi <?php  if(valueinstr($row_sanpham['dacdiemkhac'],17)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></td>
-                                        <td><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Sân vườn <?php  if(valueinstr($row_sanpham['dacdiemkhac'],18)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
+                                <div class="row">
+                                    <p class="col-md-3 col-xs-6 table-row"><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Tiện để ở  <?php  if(valueinstr($row_sanpham['dacdiemkhac'],1)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?> </p>
+                                    <p class="col-md-3 col-xs-6 table-row"><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Gần trường <?php  if(valueinstr($row_sanpham['dacdiemkhac'],2)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></p>
+                                    <p class="col-md-3 col-xs-6 table-row"><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Khu nội bộ <?php  if(valueinstr($row_sanpham['dacdiemkhac'],3)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></p>
+                                    <p class="col-md-3 col-xs-6 table-row"><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Truyền hình cáp </p>
 
+                                    <p class="col-md-3 col-xs-6 table-row"><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Tiện làm văn phòng <?php  if(valueinstr($row_sanpham['dacdiemkhac'],4)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></p>
+                                    <p class="col-md-3 col-xs-6 table-row"><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Gần bệnh viện <?php  if(valueinstr($row_sanpham['dacdiemkhac'],5)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></p>
+                                    <p class="col-md-3 col-xs-6 table-row"><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Có bảo vệ <?php  if(valueinstr($row_sanpham['dacdiemkhac'],6)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></p>
+                                    <p class="col-md-3 col-xs-6 table-row"><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Điện thoại</p>
+
+                                    <p class="col-md-3 col-xs-6 table-row"><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Tiện cho sản xuất <?php  if(valueinstr($row_sanpham['dacdiemkhac'],7)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></p>
+                                    <p class="col-md-3 col-xs-6 table-row"><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Gần chợ - siêu thị <?php  if(valueinstr($row_sanpham['dacdiemkhac'],8)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></p>
+                                    <p class="col-md-3 col-xs-6 table-row"><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Chỗ đậu xe hơi <?php  if(valueinstr($row_sanpham['dacdiemkhac'],9)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></p>
+                                    <p class="col-md-3 col-xs-6 table-row"><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Đồng hồ nước <?php  if(valueinstr($row_sanpham['dacdiemkhac'],10)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></p>
+
+                                    <p class="col-md-3 col-xs-6 table-row"><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Tiện kinh doanh <?php  if(valueinstr($row_sanpham['dacdiemkhac'],11)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></p>
+                                    <p class="col-md-3 col-xs-6 table-row"><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Gần công viên <?php  if(valueinstr($row_sanpham['dacdiemkhac'],12)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></p>
+                                    <p class="col-md-3 col-xs-6 table-row"><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Internet <?php  if(valueinstr($row_sanpham['dacdiemkhac'],13)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></p>
+                                    <p class="col-md-3 col-xs-6 table-row"><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Đồng hồ điện <?php  if(valueinstr($row_sanpham['dacdiemkhac'],14)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></p>
+
+                                    <p class="col-md-3 col-xs-6 table-row"><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Máy nước nóng <?php  if(valueinstr($row_sanpham['dacdiemkhac'],15)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></p>
+                                    <p class="col-md-3 col-xs-6 table-row"><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Máy lạnh <?php  if(valueinstr($row_sanpham['dacdiemkhac'],16)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></p>
+                                    <p class="col-md-3 col-xs-6 table-row"><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Hồ bơi <?php  if(valueinstr($row_sanpham['dacdiemkhac'],17)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></p>
+                                    <p class="col-md-3 col-xs-6 table-row"><img src="<?php echo $linkrootbds?>templates/assets/img/icon/rent-orange.png"> Sân vườn <?php  if(valueinstr($row_sanpham['dacdiemkhac'],18)!=''){?> <img src="imgs/layout/check_ddk.jpg" alt="" class="table-active"/> <?php }?></p>
+                                </div>
                             </div>
                             <!-- End features area  -->
 
@@ -260,7 +240,6 @@
                             <!-- End video area  -->
                         </div>
                     </div>
-
                     <div class="similar-post-section padding-top-40">
                         <h4 class="s-property-title">Bất Động Sản Khác</h4>
                         <div class="content-area recent-property" style="padding-bottom: 60px; background-color: rgb(252, 252, 252);">
@@ -287,38 +266,33 @@
                                                     <div class="col-sm-12 col-sm-6 col-md-4 p0">
                                                         <div class="box-two proerty-item">
                                                             <div class="item-thumb">
-                                                                <a href="<?php echo $linkrootbds; ?><?php echo $row_bds['subject']; ?>.html"
-                                                                   title="<?php echo $row_bds['name']; ?>">
+                                                                <a href="<?php echo $linkrootbds; ?><?php echo $row_bds['subject'];?>.html" title="<?php echo $row_bds['name'];?>">
                                                                     <?php
-                                                                    if ($row_bds['image'] != "") $hinh = $row_bds['image']; else $hinh = "imgs/noimage.png";
+                                                                    if($row_bds['image']!="") $hinh=$row_bds['image'];else $hinh="imgs/noimage.png";
                                                                     ?>
-                                                                    <img src="<?php echo $hinh; ?>" alt="<?php echo $row_bds['name']; ?>">
+                                                                    <img src="<?php echo $hinh;?>" alt="<?php echo $row_bds['name'];?>">
                                                                 </a>
                                                             </div>
 
                                                             <div class="item-entry overflow">
                                                                 <h5>
-                                                                    <a href="<?php echo $linkrootbds ?><?php echo $row_bds['subject']; ?>.html"
-                                                                       title="<?php echo $row_bds['name']; ?>">
-                                                                        <?php echo strip_tags($row_bds['name']); ?>
+                                                                    <a href="<?php echo $linkrootbds?><?php echo $row_bds['subject'];?>.html" title="<?php echo $row_bds['name'];?>">
+                                                                        <?php echo ucwords(strip_tags($row_bds['name']));?>
                                                                     </a>
                                                                 </h5>
                                                                 <div class="dot-hr"></div>
-                                                                <p style="color: #000;"><b> <i class="fa fa-map-marker"
-                                                                                               aria-hidden="true"></i></b> <?= get_field('tbl_quanhuyen', 'id', $row_bds['idquan'], 'name'); ?>
-                                                                    , <?= get_field('tbl_quanhuyen_category', 'id', $row_bds['idcity'], 'name'); ?>
-                                                                </p>
-                                                                <p class="text-right proerty-price"> <?php echo number_format($row_bds['price']); ?><?php echo value_unit($row_bds['donvi']); ?></p>
+                                                                <p style="color: #000;padding: 0;"><b> <i class="fa fa-map-marker" aria-hidden="true"></i></b> <?=get_field('tbl_quanhuyen','id',$row_bds['idquan'],'name');?>, <?=get_field('tbl_quanhuyen_category','id',$row_bds['idcity'],'name');?> </p>
                                                                 <p style="display: none;"><?php echo catchuoi_tuybien($row_bds['description'], 15); ?></p>
                                                                 <div class="property-icon">
-                                                                    <img title="Diện Tích"
-                                                                         src="<?php echo $linkrootbds ?>/templates/assets/img/icon/room.png"><?php echo $row_bds['tongdtsudung']; ?>
-                                                                    m2
-                                                                    <img title="Số Phòng"
-                                                                         src="<?php echo $linkrootbds ?>/templates/assets/img/icon/bed.png"><?php echo $row_bds['sophong']; ?>
-                                                                    <img title="Số Tầng"
-                                                                         src="<?php echo $linkrootbds ?>/templates/assets/img/icon/cars.png"><?php echo $row_bds['solau']; ?>
+                                                                    <i title="tổng diện tích" style="margin-right: 5px;" class="fa fa-building" aria-hidden="true"></i><?php echo $row_bds['tongdtsudung']; ?> m2
+                                                                    <i title="số phòng" style="margin-left: 10px;margin-right: 5px;" class="fa fa-bed" aria-hidden="true"></i><?php echo $row_bds['sophong']; ?>
+                                                                    <i title="số tầng" style="margin-left: 10px;margin-right: 5px;" class="fa fa-building-o" aria-hidden="true"></i><?php echo $row_bds['solau']; ?>
                                                                 </div>
+                                                                <div class="dot-hr"></div>
+                                                                <p class="text-right proerty-price">
+                                                                    <span class="label-1">Bán</span>
+                                                                    <?php echo  number_format($row_bds['price']);?> <?php echo value_unit($row_bds['donvi']);?>
+                                                                </p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -667,48 +641,6 @@
 		?>
     </div><!-- End .tag -->                 
     
-    <div class="news_other">
-    
-        <div class="block_prod">
-            <h4 class="t_prod">
-                <span>
-                    Doanh nghiệp khác
-                </span>
-            </h4><!-- End .t_prod -->
-            <div class="f_news">
-                <ul>
-                	<?php
-                    $bds=get_records("tbl_rv_item","status=1 and parent='".$row_sanpham['parent']."'","rand()","0,6"," ");
-                    $cate=$row_sanpham['cate'];
-                    while($row_bds=mysql_fetch_assoc($bds)){
-                    ?>
-                    <li class="clearfix">
-                        <span class="fn_1">
-                            <a href="<?php echo $linkrootbds?><?php echo $row_bds['subject'];?>.html" title="<?php echo $row_bds['name'];?>">
-								<?php 
-                                if($row_bds['image']!="") $hinh=$row_bds['image'];else $hinh="imgs/noimage.png";
-                                $hinh=$linkrootbds."imagecache/image.php/".$hinh."?width=100&amp;height=100&amp;cropratio=1:1&amp;image=".$linkrootbds.$hinh;
-                                ?>
-                                <img src="<?php echo $hinh;?>" alt="<?php echo $row_bds['name'];?>">
-                            </a> 
-                        </span><!-- End .fn_1 -->
-                        <span class="fn_2">
-                            <h4>
-                                <a href="<?php echo $linkrootbds?><?php echo $row_bds['subject'];?>.html" title="<?php echo $row_bds['name'];?>">
-                                	<?=$row_bds['name']?>
-                                </a>
-                            </h4>
-                            <p>
-                                <?php echo catchuoi_tuybien(strip_tags($row_bds['detail_short']),35);?>
-                            </p>
-                        </span><!-- End .fn_2 -->
-                    </li>
-                    <?php }?>
-                </ul>
-            </div><!-- End .f_news -->
-        </div><!-- End .block_prod -->
-        
-    </div><!-- End .news_other -->
 <?php }elseif($row_sanpham['cate']==4){ ?> 
 
 
