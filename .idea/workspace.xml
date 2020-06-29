@@ -3,31 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="37bb6dba-a860-47d4-8b82-13f79459e813" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/templates/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/templates/admin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/func.lib.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/func.lib.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/bds.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/bds.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/bds_home.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/bds_home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/bds_of_city.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/bds_of_city.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/bds_of_street.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/bds_of_street.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/detail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/filter_anywhere.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/filter_anywhere.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/huyen.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/huyen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/info_foot.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/info_foot.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/nhucau.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/nhucau.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/partner.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/partner.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/phuong.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/phuong.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/processFrame.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/processFrame.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/product_detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/product_detail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/tag_bds.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/tag_bds.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/tags.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/tags.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/thamdinhgia.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/thamdinhgia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/css/lightslider.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/lightslider.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/templates/assets/js/main.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +46,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/module" />
+    <property name="last_opened_file_path" value="G:/xampp/htdocs/dsupport/laraveldev" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -106,6 +81,7 @@
       <workItem from="1592635548352" duration="6625000" />
       <workItem from="1593012780283" duration="7292000" />
       <workItem from="1593180351055" duration="25957000" />
+      <workItem from="1593331944124" duration="668000" />
     </task>
     <servers />
   </component>
