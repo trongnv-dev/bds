@@ -64,7 +64,7 @@
                     </ul>
                 </li>
                 <!-- Video dự án-->
-                <li class="wow fadeInDown" data-wow-delay="0.4s"><a class="<?php if ($frame == "video" || $frame == "video_detail") { echo "active"; } ?>" href="<?php echo $linkrootbds ?>video.html" title="Video dự án">Video dự án</a></li>
+<!--                <li class="wow fadeInDown" data-wow-delay="0.4s"><a class="--><?php //if ($frame == "video" || $frame == "video_detail") { echo "active"; } ?><!--" href="--><?php //echo $linkrootbds ?><!--video.html" title="Video dự án">Video dự án</a></li>-->
                 <!-- Thẩm định giá miễn phí-->
                 <li class="wow fadeInDown" data-wow-delay="0.4s"><a class="<?php if ($frame == "thamdinhgia") { echo "active"; } ?>" href="<?php echo $linkrootbds ?>tham-dinh-gia.html" title="Thẩm định giá">Thẩm định giá</a></li>
                 <!-- Ký Gửi-->

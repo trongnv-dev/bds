@@ -1,4 +1,5 @@
 <?php
+//echo $frame;die;
 switch ($frame){
 	case "edit_bds"                : include("module/edit_bds.php");break;
 	case "edit_da"                 : include("module/edit_da.php");break;

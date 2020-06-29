@@ -1,32 +1,4 @@
-<div class="page-head">
-    <div class="container">
-        <div class="row">
-            <div class="page-head-content">
-                <div class="breacrum">
-                    <div id="breacrum" >
-         <span typeof="v:Breadcrumb">
-            <a  href="<?php echo $linkrootbds?>" rel="v:url" property="v:title"  title="Trang chủ"> Trang chủ </a>
-        </span>
-                        <span typeof="v:Breadcrumb">&raquo;
-            <a  rel="v:url" property="v:title"  title="<?=get_field('tbl_quanhuyen_category','subject',$_GET['quan'],'name');?>" href="<?php echo $linkrootbds?><?=$_GET['quan'];?>.html"> <?=get_field('tbl_quanhuyen_category','subject',$_GET['quan'],'name');?> </a>
-        </span>
-                        <span typeof="v:Breadcrumb">&raquo;
-            <a rel="v:url" property="v:title"  href="<?php echo $linkrootbds?><?=$_GET['quan'];?>/<?=$_GET['huyen'];?>.html"> <?=get_field('tbl_quanhuyen','subject',$_GET['huyen'],'name');?> </a>
-        </span>
-                        <span typeof="v:Breadcrumb">&raquo;
-        	<?php $title = get_field('tbl_phuongxa','subject',$_GET['phuong'],'name');
-        	    echo $title;
-        	?>
-        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
- 
-<?php 
+<?php
  
  	$quan=$_GET['quan'];
 	
@@ -98,38 +70,33 @@
                             <div class="col-sm-12 col-sm-6 col-md-4 p0">
                                 <div class="box-two proerty-item">
                                     <div class="item-thumb">
-                                        <a href="<?php echo $linkrootbds; ?><?php echo $row_bds['subject']; ?>.html"
-                                           title="<?php echo $row_bds['name']; ?>">
+                                        <a href="<?php echo $linkrootbds; ?><?php echo $row_bds['subject'];?>.html" title="<?php echo $row_bds['name'];?>">
                                             <?php
-                                            if ($row_bds['image'] != "") $hinh = $row_bds['image']; else $hinh = "imgs/noimage.png";
+                                            if($row_bds['image']!="") $hinh=$row_bds['image'];else $hinh="imgs/noimage.png";
                                             ?>
-                                            <img src="<?php echo $hinh; ?>" alt="<?php echo $row_bds['name']; ?>">
+                                            <img src="<?php echo $hinh;?>" alt="<?php echo $row_bds['name'];?>">
                                         </a>
                                     </div>
 
                                     <div class="item-entry overflow">
                                         <h5>
-                                            <a href="<?php echo $linkrootbds ?><?php echo $row_bds['subject']; ?>.html"
-                                               title="<?php echo $row_bds['name']; ?>">
-                                                <?php echo strip_tags($row_bds['name']); ?>
+                                            <a href="<?php echo $linkrootbds?><?php echo $row_bds['subject'];?>.html" title="<?php echo $row_bds['name'];?>">
+                                                <?php echo ucwords(strip_tags($row_bds['name']));?>
                                             </a>
                                         </h5>
                                         <div class="dot-hr"></div>
-                                        <p style="color: #000;"><b> <i class="fa fa-map-marker"
-                                                                       aria-hidden="true"></i></b> <?= get_field('tbl_quanhuyen', 'id', $row_bds['idquan'], 'name'); ?>
-                                            , <?= get_field('tbl_quanhuyen_category', 'id', $row_bds['idcity'], 'name'); ?>
-                                        </p>
-                                        <p class="text-right proerty-price"> <?php echo number_format($row_bds['price']); ?><?php echo value_unit($row_bds['donvi']); ?></p>
+                                        <p style="color: #000;padding: 0;"><b> <i class="fa fa-map-marker" aria-hidden="true"></i></b> <?=get_field('tbl_quanhuyen','id',$row_bds['idquan'],'name');?>, <?=get_field('tbl_quanhuyen_category','id',$row_bds['idcity'],'name');?> </p>
                                         <p style="display: none;"><?php echo catchuoi_tuybien($row_bds['description'], 15); ?></p>
                                         <div class="property-icon">
-                                            <img title="Diện Tích"
-                                                 src="<?php echo $linkrootbds ?>/templates/assets/img/icon/room.png"><?php echo $row_bds['tongdtsudung']; ?>
-                                            m2
-                                            <img title="Số Phòng"
-                                                 src="<?php echo $linkrootbds ?>/templates/assets/img/icon/bed.png"><?php echo $row_bds['sophong']; ?>
-                                            <img title="Số Tầng"
-                                                 src="<?php echo $linkrootbds ?>/templates/assets/img/icon/cars.png"><?php echo $row_bds['solau']; ?>
+                                            <i title="tổng diện tích" style="margin-right: 5px;" class="fa fa-building" aria-hidden="true"></i><?php echo $row_bds['tongdtsudung']; ?> m2
+                                            <i title="số phòng" style="margin-left: 10px;margin-right: 5px;" class="fa fa-bed" aria-hidden="true"></i><?php echo $row_bds['sophong']; ?>
+                                            <i title="số tầng" style="margin-left: 10px;margin-right: 5px;" class="fa fa-building-o" aria-hidden="true"></i><?php echo $row_bds['solau']; ?>
                                         </div>
+                                        <div class="dot-hr"></div>
+                                        <p class="text-right proerty-price">
+                                            <span class="label-1">Bán</span>
+                                            <?php echo  number_format($row_bds['price']);?> <?php echo value_unit($row_bds['donvi']);?>
+                                        </p>
                                     </div>
                                 </div>
                             </div>

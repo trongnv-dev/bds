@@ -906,7 +906,7 @@ function pagesListLimit_new_2013($totalRows, $pageSize = 5, $offset = 5, $host_l
     for ($j = $from; $j <= $to; $j++) {
         if ($j == $currentPage) $links = $links . "<span>{$j}</span>"; else {
             $qt = $querystring . "&pageNum={$j}";
-            $links = $links . '<li><a href = ' . $currentURL . '/' . $get_p . '/' . $tukhoa . '/' . $j . '.html>' . $j . '</a></li>';
+            $links = $links . '<li><li><a href = ' . $currentURL . '/' . $get_p . '/' . $tukhoa . '/' . $j . '.html>' . $j . '</a></li>';
         }
     }
     return $links;
@@ -930,14 +930,14 @@ function pagesLinks_new_full_2013($totalRows, $pageSize = 5, $host_link_full, $t
     $lastLink = "";
     $nextLink = "";
     if ($currentPage > 1) {
-        $firstLink = '<a href = ' . $currentURL . '/' . $get_p . '/' . $tukhoa . '/1.html> &laquo; </a>';
+        $firstLink = '<li><a href = ' . $currentURL . '/' . $get_p . '/' . $tukhoa . '/1.html> &laquo; </a></li>';
         $prevPage = $currentPage - 1;
-        $prevLink = '<a href = ' . $currentURL . '/' . $get_p . '/' . $tukhoa . '/' . $prevPage . '.html> &lsaquo; </a>';
+        $prevLink = '<li><a href = ' . $currentURL . '/' . $get_p . '/' . $tukhoa . '/' . $prevPage . '.html> &lsaquo; </a></li>';
     }
     if ($currentPage < $totalPages) {
-        $lastLink = '<a href = ' . $currentURL . '/' . $get_p . '/' . $tukhoa . '/' . $totalPages . '.html> &raquo; </a>';
+        $lastLink = '<li><a href = ' . $currentURL . '/' . $get_p . '/' . $tukhoa . '/' . $totalPages . '.html> &raquo; </a></li>';
         $nextPage = $currentPage + 1;
-        $nextLink = '<a href = ' . $currentURL . '/' . $get_p . '/' . $tukhoa . '/' . $nextPage . '.html> &rsaquo; </a>';
+        $nextLink = '<li><a href = ' . $currentURL . '/' . $get_p . '/' . $tukhoa . '/' . $nextPage . '.html> &rsaquo; </a></li>';
     }
     return $firstLink . $prevLink . pagesListLimit_new_2013($totalRows, $pageSize, $offset = 5, $host_link_full, $tukhoa, $get_p) . $nextLink . $lastLink;
 }
@@ -960,14 +960,14 @@ function pagesLinks_new_full_2014($totalRows, $pageSize = 5, $host_link_full, $g
     $lastLink = "";
     $nextLink = "";
     if ($currentPage > 1) {
-        $firstLink = '<a href = ' . $currentURL . '/' . $get_p . '/' . $tukhoa . '/1/> &laquo; </a>';
+        $firstLink = '<li><a href = ' . $currentURL . '/' . $get_p . '/' . $tukhoa . '/1/> &laquo; </a></li>';
         $prevPage = $currentPage - 1;
-        $prevLink = '<a href = ' . $currentURL . '/' . $get_p . '/' . $prevPage . '/> &lsaquo; </a>';
+        $prevLink = '<li><a href = ' . $currentURL . '/' . $get_p . '/' . $prevPage . '/> &lsaquo; </a></li>';
     }
     if ($currentPage < $totalPages) {
-        $lastLink = '<a href = ' . $currentURL . '/' . $get_p . '/' . $totalPages . '/> &raquo; </a>';
+        $lastLink = '<li><a href = ' . $currentURL . '/' . $get_p . '/' . $totalPages . '/> &raquo; </a></li>';
         $nextPage = $currentPage + 1;
-        $nextLink = '<a href = ' . $currentURL . '/' . $get_p . '/' . $nextPage . '/> &rsaquo; </a>';
+        $nextLink = '<li><a href = ' . $currentURL . '/' . $get_p . '/' . $nextPage . '/> &rsaquo; </a></li>';
     }
     return $firstLink . $prevLink . pagesListLimit_new_2014($totalRows, $pageSize, $offset = 5, $host_link_full, $get_p) . $nextLink . $lastLink;
 }
@@ -999,7 +999,7 @@ function pagesListLimit_new_2014($totalRows, $pageSize = 5, $offset = 5, $host_l
     for ($j = $from; $j <= $to; $j++) {
         if ($j == $currentPage) $links = $links . "<span>{$j}</span>"; else {
             $qt = $querystring . "&pageNum={$j}";
-            $links = $links . '<a href = ' . $currentURL . '/' . $get_p . '/' . $j . '/>' . $j . '</a>';
+            $links = $links . '<li><a href = ' . $currentURL . '/' . $get_p . '/' . $j . '/>' . $j . '</a></li>';
         }
     }
     return $links;

@@ -20,41 +20,6 @@ if($aaaa==1){
 }
 
 ?>
-<div class="page-head">
-    <div class="container">
-        <div class="row">
-            <div class="breacrum">
-                <div id="breacrum" >
-         <span typeof="v:Breadcrumb">
-            <a  rel="v:url" property="v:title"  title="Trang chủ" href="<?php echo $linkrootbds?>"> Trang chủ </a>
-        </span>
-
-                    <span typeof="v:Breadcrumb">  &raquo;
-        	<?php
-            if($aaaa==1 || $ghinho==0){
-                ?>
-                <a  rel="v:url" property="v:title"  title=" <?= get_field('tbl_rv_category','subject',$cate,'name');?> " href="<?= get_field('tbl_rv_category','subject',$cate,'subject');?>.html">
-              <?= get_field('tbl_rv_category','subject',$cate,'name');?>
-            </a>
-            <?php }else {
-                if($cate=='tin-tuc') {echo "Tin tức";}
-                elseif($cate=='du-an') {echo "Dự án";}
-                elseif($cate=='doanh-nghiep') {echo "Doanh nghiệp";}
-            }?>
-        </span>
-
-                    <span typeof="v:Breadcrumb"> &raquo;
-           <?=str_replace("-", " ", $tagcontent);?>
-        </span>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
- 
- 
 <div class="f_cont clearfix">
 
     <article class="content">

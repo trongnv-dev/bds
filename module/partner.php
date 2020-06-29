@@ -2,43 +2,38 @@
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1 col-sm-12 text-center page-title">
-
                 <h2><a href="<?php echo $linkrootbds?>doanh-nghiep.html" title="Nhà môi giới">Nhà môi giới</a></h2>
             </div>
         </div>
-
-        <div class="row">
-            <div class="row testimonial">
-                <div class="col-md-12">
-                    <div id="testimonial-slider">
-                        <?php
-                        $partner=get_records("tbl_rv_item","status=1 and cate=3 and hot=1","sort DESC","0,8"," ");
-                        while($row_partner=mysql_fetch_assoc($partner)){
-                            ?>
-                            <div class="item">
-                                <div class="client-text">
-                                    <h4>
-                                        <a href="<?php echo $linkrootbds?><?php echo $row_partner['subject'];?>.html" title="<?php echo $row_partner['name'];?>">
-                                            <?php echo catchuoi_tuybien($row_partner['name'], 10);?>
-                                        </a>
-                                    </h4>
-                                    <p><?php echo catchuoi_tuybien($row_partner['detail_short'], 30);?></p>
-                                </div>
-                                <div class="client-face wow fadeInRight" data-wow-delay=".9s">
-                                    <?php
-                                        if($row_partner['image']){
-                                    ?>
-<!--                                    <a href="--><?php //echo $linkrootbds?><!----><?php //echo $row_partner['subject'];?><!--.html" title="--><?php //echo $row_partner['name'];?><!--">-->
-                                        <img src="<?php echo $linkrootbds?><?php echo $row_partner['image'];?>" alt="<?php echo $row_partner['name'];?>"/>
-<!--                                    </a>-->
-                                    <?php } ?>
-                                </div>
+        <div class="row testimonial">
+            <div class="col-md-12">
+                <div id="testimonial-slider">
+                    <?php
+                    $partner=get_records("tbl_rv_item","status=1 and cate=3 and hot=1","sort DESC","0,8"," ");
+                    while($row_partner=mysql_fetch_assoc($partner)){
+                        ?>
+                        <div class="item">
+                            <div class="client-text">
+                                <h4>
+                                    <a href="<?php echo $linkrootbds?><?php echo $row_partner['subject'];?>.html" title="<?php echo $row_partner['name'];?>">
+                                        <?php echo catchuoi_tuybien($row_partner['name'], 10);?>
+                                    </a>
+                                </h4>
+                                <p><?php echo catchuoi_tuybien($row_partner['detail_short'], 30);?></p>
                             </div>
-                        <?php }?>
-                    </div>
+                            <div class="client-face wow fadeInRight" data-wow-delay=".9s">
+                                <?php
+                                    if($row_partner['image']){
+                                ?>
+<!--                                    <a href="--><?php //echo $linkrootbds?><!----><?php //echo $row_partner['subject'];?><!--.html" title="--><?php //echo $row_partner['name'];?><!--">-->
+                                    <img src="<?php echo $linkrootbds?><?php echo $row_partner['image'];?>" alt="<?php echo $row_partner['name'];?>"/>
+<!--                                    </a>-->
+                                <?php } ?>
+                            </div>
+                        </div>
+                    <?php }?>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
@@ -99,7 +94,6 @@
 <div class="boy-sale-area">
     <div class="container">
         <div class="row">
-
             <div class="col-md-6 col-sm-10 col-sm-offset-1 col-md-offset-0 col-xs-12">
                 <div class="asks-first">
                     <div class="asks-first-circle">

@@ -1,13 +1,3 @@
-<div class="breacrum">
-     <div id="breacrum" >
-         <span typeof="v:Breadcrumb">
-            <a  href="<?php echo $linkrootbds?>" rel="v:url" property="v:title"  title="Trang chủ"> Trang chủ </a>
-        </span>
-         <span typeof="v:Breadcrumb"> &raquo;
-            Nhà đất chưa xác thực
-        </span>
-    </div>
-</div>
 <?php
 	$pageSize = 30;
 	$totalRows = 0;
@@ -53,10 +43,9 @@
                                     <div class="col-sm-6 col-md-3 p0">
                                         <div class="box-two proerty-item">
                                             <div class="item-thumb">
-                                                <a href="<?php echo $linkrootbds?><?php echo $row_bds['subject'];?>.html" title="<?php echo $row_bds['name'];?>">
+                                                <a href="<?php echo $linkrootbds; ?><?php echo $row_bds['subject'];?>.html" title="<?php echo $row_bds['name'];?>">
                                                     <?php
                                                     if($row_bds['image']!="") $hinh=$row_bds['image'];else $hinh="imgs/noimage.png";
-                                                    $hinh=$linkrootbds."imagecache/image.php/".$hinh."?width=100&amp;height=100&amp;cropratio=1:1&amp;image=".$linkrootbds.$hinh;
                                                     ?>
                                                     <img src="<?php echo $hinh;?>" alt="<?php echo $row_bds['name'];?>">
                                                 </a>
@@ -65,19 +54,22 @@
                                             <div class="item-entry overflow">
                                                 <h5>
                                                     <a href="<?php echo $linkrootbds?><?php echo $row_bds['subject'];?>.html" title="<?php echo $row_bds['name'];?>">
-                                                        <?php echo catchuoi_tuybien(strip_tags($row_bds['name']),10);?>
+                                                        <?php echo ucwords(strip_tags($row_bds['name']));?>
                                                     </a>
                                                 </h5>
                                                 <div class="dot-hr"></div>
-                                                <span class=""><b> Vị trí :</b> <?=get_field('tbl_quanhuyen_category','id',$row_bds['idcity'],'name');?> </span>
-                                                <p class="proerty-price"> <b> $ Giá :</b> <?php echo  $row_bds['price'];?> <?php echo value_unit($row_bds['donvi']);?>/<?php echo dientich($row_bds['dientich']);?></p>
+                                                <p style="color: #000;padding: 0;"><b> <i class="fa fa-map-marker" aria-hidden="true"></i></b> <?=get_field('tbl_quanhuyen','id',$row_bds['idquan'],'name');?>, <?=get_field('tbl_quanhuyen_category','id',$row_bds['idcity'],'name');?> </p>
+                                                <p style="display: none;"><?php echo catchuoi_tuybien($row_bds['description'], 15); ?></p>
                                                 <div class="property-icon">
-                                                    <img src="<?php echo $linkrootbds?>templates/assets/img/icon/room.png"><?php echo $row_bds['tongdtsudung']; ?> m2
-                                                    <br>
-                                                    <img src="<?php echo $linkrootbds?>templates/assets/img/icon/bed.png"> Số phòng: <?php echo $row_bds['sophong']; ?>
-                                                    <br>
-                                                    <img src="<?php echo $linkrootbds?>templates/assets/img/icon/cars.png"><?php echo $row_bds['solau']; ?> tầng
+                                                    <i title="tổng diện tích" style="margin-right: 5px;" class="fa fa-building" aria-hidden="true"></i><?php echo $row_bds['tongdtsudung']; ?> m2
+                                                    <i title="số phòng" style="margin-left: 10px;margin-right: 5px;" class="fa fa-bed" aria-hidden="true"></i><?php echo $row_bds['sophong']; ?>
+                                                    <i title="số tầng" style="margin-left: 10px;margin-right: 5px;" class="fa fa-building-o" aria-hidden="true"></i><?php echo $row_bds['solau']; ?>
                                                 </div>
+                                                <div class="dot-hr"></div>
+                                                <p class="text-right proerty-price">
+                                                    <span class="label-1">Bán</span>
+                                                    <?php echo  number_format($row_bds['price']);?> <?php echo value_unit($row_bds['donvi']);?>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>

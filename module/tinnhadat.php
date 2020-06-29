@@ -1,14 +1,4 @@
-<div class="breacrum">
-     <div id="breacrum" >
-         <span typeof="v:Breadcrumb">
-            <a  href="<?php echo $linkrootbds?>" rel="v:url" property="v:title"  title="Trang chủ"> Trang chủ </a>
-        </span>
-         <span typeof="v:Breadcrumb"> &raquo;
-           <a  rel="v:url" property="v:title"  href="<?php echo $linkrootbds?>tin-tuc-nha-dat.html" title="Trang chủ">  Tin tức nhà đất  </a>
-        </span>
-    </div>
-</div>
-<?php 
+<?php
  
 
 	$pageSize = 30;
